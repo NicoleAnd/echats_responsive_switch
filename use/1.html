@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <style type="text/css">
+    body {
+        color: #fff;
+        font-size: 1rem;
+        text-align: center;
+        width: 100%;
+    }
+    .layout-left{width:7%;height:100%;background:red;float: left;position: absolute;z-index:1;left:0}
+    .nav{width:100%;height:100%;height:100%;float: left;background: mediumseagreen ;position: relative;}
+    .layout-right{width:93%;height:100%;background:black;float:left;position: absolute;z-index:1;right: 0}
+    .layout-top{width: 100%;height: 50px;background: pink;position: absolute;z-index:5}
+    .layout-body{width: 100%;background: skyblue;position: absolute;z-index:10;top:50px;bottom: 25px;overflow: auto;}
+    .nav-label{position:absolute;width:7%;height:50px;line-height: 50px;text-align:center;background:yellow;font-size:20px;color:red;z-index: 99}
+    ul.nav-pills {top: 50px;z-index: 2;background: rgba(255,255,255,.5)}
+    @media screen and (max-width: 810px) {
+        .layout-left{width: 13%;}
+        .layout-right{width: 87%;}
+        .nav-label{width:13%;}
+    }
+    </style>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        $("nav ul li").click(function() {
+            $("nav ul li").eq($(this).index()).addClass("active").siblings().removeClass("active");
+        });
+        $(".nav-label").click(function(){
+                
+            if($(".layout-left").width() == 0){
+                $("nav").fadeToggle();
+                $(".layout-left").css('width','7%');
+                $(".layout-right").css('width','93%');
+                $(".nav-label").css('width','7%');
+                
+            }else{
+                $("nav").fadeToggle();
+                $(".layout-left").css('width','0');
+                $(".layout-right").css('width','100%');
+                $(".nav-label").css('width','4%');
+            }
+          
+
+    
+        });
+    })
+    </script>
+</head>
+
+<body>
+    <div class="nav-label">三</div>
+    <div class="layout-left">
+        <!-- <div class="nav" style="width:100%;height:100%;height:100%;float: left;background: mediumseagreen ;position: relative;">导航栏</div> -->
+        <div class="nav">
+            <div class="row">
+                
+                <nav class="col-md-12" id="myScrollspy">
+
+                    <ul class="nav nav-pills nav-stacked">
+                        <li><a href="#section1">上一页</a></li>
+                        <li><a href="#section1">Section 1</a></li>
+                        <li><a href="#section2">Section 2</a></li>
+                        <li><a href="#section3">Section 3</a></li>
+                        <li><a href="#section1">Section 1</a></li>
+                        <li><a href="#section2">Section 2</a></li>
+                        <li><a href="#section3">Section 3</a></li>
+                        <li><a href="#section1">Section 1</a></li>
+                        <li><a href="#section2">Section 2</a></li>
+                        <li><a href="#section3">Section 3</a></li>
+                        <li><a href="#section1">Section 1</a></li>
+                        <li><a href="#section2">Section 2</a></li>
+                        <li><a href="#section3">Section 3</a></li>
+                        <li><a href="#section1">Section 1</a></li>
+                        <li><a href="#section2">Section 2</a></li>
+                        <li><a href="#section3">Section 3</a></li>
+                        <li><a href="#section2">Section 2</a></li>
+                        <li><a href="#section3">Section 3</a></li>
+                        <li><a href="#section1">Section 1</a></li>
+                        <li><a href="#section2">Section 2</a></li>
+                        <li><a href="#section3">Section 3</a></li>
+                        <li><a href="#section1">下一页</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="layout-right">
+        <div class="layout-top">头部</div>
+        <div class="layout-body">
+            <div class="row" style="background:red;height:25%">
+                <div class="col-xs-6 col-md-3 .col-lg-3" style="background:black;height:100%">.col-xs-6 .col-md-4</div>
+                <div class="col-xs-6 col-md-3 .col-lg-3" style="background:yellow;height:100%">.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>
+                </div>
+                <div class="col-xs-6 col-md-3 .col-lg-3" style="background:blue;height:100%">.col-xs-6 .col-md-4</div>
+                <div class="col-xs-6 col-md-3 .col-lg-3" style="background:green;height:100%">.col-xs-6 .col-md-4</div>
+            </div>
+            <div class="row" style="background:yellow;height:25%">
+                <div class="col-xs-6 col-md-3 .col-lg-3" style="background:red;height:100%">.col-xs-6 .col-md-4</div>
+                <div class="col-xs-6 col-md-3 .col-lg-3" style="background:blue;height:100%">.col-xs-6 .col-md-4</div>
+                <div class="col-xs-6 col-md-3 .col-lg-3" style="background:green;height:100%">.col-xs-6 .col-md-4.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>
+                </div>
+                <div class="col-xs-6 col-md-3 .col-lg-3" style="background:black;height:100%">.col-xs-6 .col-md-4</div>
+            </div>
+            <div class="row" style="background:blue;height:25%">
+                <div class="col-xs-6 col-md-3 .col-lg-3" style="background:yellow;height:100%">.col-xs-6 .col-md-4.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>
+                </div>
+                <div class="col-xs-6 col-md-3 .col-lg-3" style="background:green;height:100%">.col-xs-6 .col-md-4</div>
+                <div class="col-xs-6 col-md-3 .col-lg-3" style="background:black;height:100%">.col-xs-6 .col-md-4</div>
+                <div class="col-xs-6 col-md-3 .col-lg-3" style="background:red;height:100%">.col-xs-6 .col-md-4</div>
+            </div>
+            <div class="row" style="background:green;height:25%">
+                <div class="col-xs6 col-md-3 .col-lg-3" style="background:blue;height:100%">.col-xs-6 .col-md-4</div>
+                <div class="col-xs-6 col-md-3 .col-lg-3" style="background:black;height:100%">.col-xs-6 .col-md-4</div>
+                <div class="col-xs-6 col-md-3 .col-lg-3" style="background:red;height:100%">.col-xs-6 .col-md-4</div>
+                <div class="col-xs-6 col-md-3 .col-lg-3" style="background:yellow;height:100%">.col-xs-6 .col-md-4.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4</div>
+            </div>
+        </div>
+        <div class="layout-foot" style="width: 100%;height: 25px;background: pink;position: absolute;z-index:200;bottom: 0">底部</div>
+    </div>
+</body>
+
+</html>
