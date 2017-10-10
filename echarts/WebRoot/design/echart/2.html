@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <style type="text/css">
+    body {
+        color: #fff;
+        font-size: 1rem;
+        text-align: center;
+        width: 100%;
+    }
+    .layout-left{width:7%;height:100%;overflow:hidden;background:red;float: left;position: absolute;z-index:1;left:0}
+    .nav{width:100%;height:100%;height:100%;float: left;background: mediumseagreen ;position: relative;}
+    .layout-right{width:93%;height:100%;background:black;float:left;position: absolute;z-index:1;right: 0}
+    .layout-top{width: 100%;height: 7%;background: pink;position: absolute;z-index:5}
+    .layout-body{width: 100%;height:90%;background: skyblue;position: absolute;z-index:10;top:50px;bottom: 25px;overflow: auto;}
+    .layout-foot{width: 100%;height: 3%;background: pink;position: absolute;z-index:200;bottom: 0}
+    .nav-label{position:absolute;width:7%;height:50px;line-height: 50px;text-align:center;background:yellow;font-size:20px;color:red;z-index: 99}
+    
+    @media screen and (max-width: 810px) {
+        .layout-left{width: 13%;}
+        .layout-right{width: 87%;}
+        .nav-label{width:13%;}
+    }
+    </style>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/Marquee.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        
+        $("nav ul li").click(function() {
+            $("nav ul li").eq($(this).index()).addClass("active").siblings().removeClass("active");
+        });
+
+        $(".nav-label").click(function(){
+                
+            if($(".layout-left").width() == 0){
+                $("nav").fadeToggle().addClass('animated bounceInLeft');
+                $(".layout-left").css('width','7%');
+                $(".layout-right").css('width','93%');
+                $(".nav-label").css('width','7%');
+                
+            }else{
+                $("nav").fadeToggle();
+                $(".layout-left").css('width','0');
+                $(".layout-right").css('width','100%');
+                $(".nav-label").css('width','4%');
+            }
+        });
+
+        //一次纵向滚动一个
+        $('#marquee2').kxbdSuperMarquee({
+            isAuto:false,
+            distance:60,
+            time:3,
+            btnGo:{up:'#goU',down:'#goD'},
+            direction:'down'
+        });
+        var navheight = $(window).height()-150;
+        $('#marquee2').css('height',navheight);
+    })
+
+</script>
+    </script>
+</head>
+
+<body>
+    <div class="nav-label">三</div>
+    <div class="layout-left">
+        <!-- <div class="nav" style="width:100%;height:100%;height:100%;float: left;background: mediumseagreen ;position: relative;">导航栏</div> -->
+       <!--  <div class="nav">
+            <div class="row"> -->
+                
+                <!-- <nav class="col-md-12"> -->
+                    
+                    <!-- <ul class="nav nav-pills nav-stacked"> -->
+
+                    <div class="demopage">
+                        <div class="control" style="width:100%;height:50px;background: pink;margin-top:50px;"><a href="javascript:void(0);" id="goD">pre</a></div>
+                        <div id="marquee2">
+                            <ul>
+                                <li style="width:100%;height:60px;background: orange"><a target="_blank" href="#">111</a></li>
+                                <li style="width:100%;height:60px;background: yellow"><a target="_blank" href="#">222</a></li>
+                                <li style="width:100%;height:60px;background: orange"><a target="_blank" href="#">333</a></li>
+                                <li style="width:100%;height:60px;background: yellow"><a target="_blank" href="#">444</a></li>
+                                <li style="width:100%;height:60px;background: orange"><a target="_blank" href="#">555</a></li>
+                                <li style="width:100%;height:60px;background: yellow"><a target="_blank" href="#">666</a></li>
+                                <li style="width:100%;height:60px;background: orange"><a target="_blank" href="#">777</a></li>
+                                <li style="width:100%;height:60px;background: yellow"><a target="_blank" href="#">888</a></li>
+                                <li style="width:100%;height:60px;background: orange"><a target="_blank" href="#">999</a></li>
+                                <li style="width:100%;height:60px;background: yellow"><a target="_blank" href="#">1010</a></li>
+                                <li style="width:100%;height:60px;background: orange"><a target="_blank" href="#">1111</a></li>
+                                <li style="width:100%;height:60px;background: yellow"><a target="_blank" href="#">1212</a></li>
+                            </ul>
+                        </div>
+                        <div class="control" style="width:100%;height:50px;background: pink"><a href="javascript:void(0);" id="goU">next</a></div>
+                        
+                    </div>
+
+
+
+
+
+
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="layout-right">
+        <div class="layout-top">头部</div>
+        <div class="layout-body">
+            <div class="row" style="background:red;height:25%">
+                <div class="col-xs-6 col-md-3 .col-lg-3" style="background:black;height:100%">.col-xs-6 .col-md-4</div>
+                <div class="col-xs-6 col-md-3 .col-lg-3" style="background:yellow;height:100%">.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>
+                </div>
+                <div class="col-xs-6 col-md-3 .col-lg-3" style="background:blue;height:100%">.col-xs-6 .col-md-4</div>
+                <div class="col-xs-6 col-md-3 .col-lg-3" style="background:green;height:100%">.col-xs-6 .col-md-4</div>
+            </div>
+            <div class="row" style="background:yellow;height:25%">
+                <div class="col-xs-6 col-md-3 .col-lg-3" style="background:red;height:100%">.col-xs-6 .col-md-4</div>
+                <div class="col-xs-6 col-md-3 .col-lg-3" style="background:blue;height:100%">.col-xs-6 .col-md-4</div>
+                <div class="col-xs-6 col-md-3 .col-lg-3" style="background:green;height:100%">.col-xs-6 .col-md-4.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>
+                </div>
+                <div class="col-xs-6 col-md-3 .col-lg-3" style="background:black;height:100%">.col-xs-6 .col-md-4</div>
+            </div>
+            <div class="row" style="background:blue;height:25%">
+                <div class="col-xs-6 col-md-3 .col-lg-3" style="background:yellow;height:100%">.col-xs-6 .col-md-4.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>
+                </div>
+                <div class="col-xs-6 col-md-3 .col-lg-3" style="background:green;height:100%">.col-xs-6 .col-md-4</div>
+                <div class="col-xs-6 col-md-3 .col-lg-3" style="background:black;height:100%">.col-xs-6 .col-md-4</div>
+                <div class="col-xs-6 col-md-3 .col-lg-3" style="background:red;height:100%">.col-xs-6 .col-md-4</div>
+            </div>
+            <div class="row" style="background:green;height:25%">
+                <div class="col-xs6 col-md-3 .col-lg-3" style="background:blue;height:100%">.col-xs-6 .col-md-4</div>
+                <div class="col-xs-6 col-md-3 .col-lg-3" style="background:black;height:100%">.col-xs-6 .col-md-4</div>
+                <div class="col-xs-6 col-md-3 .col-lg-3" style="background:red;height:100%">.col-xs-6 .col-md-4</div>
+                <div class="col-xs-6 col-md-3 .col-lg-3" style="background:yellow;height:100%">
+                    .col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                    <br>.col-xs-6 .col-md-4
+                </div>
+            </div>
+        </div>
+        <div class="layout-foot">底部</div>
+    </div>
+</body>
+
+</html>
