@@ -1,0 +1,11 @@
+*{margin:0;padding:0;}
+ul,ol,li{list-style: none;}
+#wrap{width:660px;height: 150px;margin:10px auto;position: relative;clear:both;background: #0cc;}
+#wrap li{width: 330px;float: left;height: 150px;background: #ccc;overflow: hidden;
+		text-align: center;line-height: 50px;}
+#wrap li.li1{background: #777;}
+#wrap li.li2{background: #ccc;}
+
+#wrap label{float: left;width: 10px;height: 150px;
+			position: absolute;cursor: e-resize;}
+#wrap label.lab1{left: 330px;background: #f00;}

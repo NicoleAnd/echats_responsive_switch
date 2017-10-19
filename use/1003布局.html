@@ -7,17 +7,12 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
-    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/nav.css"> -->
 
     <style type="text/css">
-    body {color: #fff;font-size: 1rem;text-align: center;background:#0f2b48;}
-    /*头部样式*/
-    /*.header{width: 100%;height: 50px;position: absolute;z-index:5;border-bottom: 2px solid #18426f;box-shadow: 0px 6px 15px #000;line-height:50px;text-align:center;
-        background:-webkit-radial-gradient(circle farthest-side,#53a7d7, #0f2b48);}*/
-    .header{width: 100%;height: 50px;position: absolute;z-index:5;text-align:center;line-height:50px;
-        /*background:-webkit-radial-gradient(circle farthest-side,#53a7d7, #0f2b48);*/
-        border-bottom: 2px solid #18426f;box-shadow: 0px 6px 20px #000;}
-
+    body {color: #fff;font-size: 1rem;text-align: center;background:#0f2b48;margin:0;padding:0;overflow-x: scroll;}
+    /*头部样式*/  
+    .header{width: 100%;height: 50px;position: absolute;z-index:5;text-align:center;line-height:50px;border-bottom: 2px solid #18426f;box-shadow: 0px 6px 20px #000;}
     .headerleft{width: 25%;float: left;text-align: left;}
     .titleborder{width: 9.5rem;vertical-align:middle;}
     .headercenter{width: 50%;float: left;text-align: center;color: #000;line-height:50px;background:-webkit-radial-gradient(circle farthest-side,#fff -16%,transparent 84%);}
@@ -25,15 +20,18 @@
     .headerright{width: 25%;float: left;text-align: right;line-height:50px;}
 
     /*中间样式*/
-    .container{width: 100%;position: absolute;z-index:10;top:60px;bottom: 25px;overflow: auto;}
-    /*左导航*/
-    .left{width:7%;height:100%;background:gray;float: left;}
+    .containerall{width: 100%;position: absolute;z-index:10;top:60px;bottom: 25px;}
     
+    /*左导航*/
+    .li1{width: 105px;float: left;height: 100%;background: #ccc;min-width: 80px;background:gray;}
+    #wrap label{float: left;width: 5px;height: 100%;cursor: e-resize;}
+    #wrap label.lab1{left: 100px;background: #f00;}
+
     /*右内容*/
-    .right{width:93%;height:100%;float: left;}
-    .col1{width:25%;height:100%;background:#ff6699;float: left;}
+    .contents{width:100%;height:100%;}
+    .col1{width:24%;height:100%;background:#ff6699;float: left;}
     .col2{width:50%;height:100%;float: left;}
-    .col3{width:25%;height:100%;background:#66cc66;float: left;}
+    .col3{width:24%;height:100%;background:#66cc66;float: left;}
     .col1row1{width:100%;height:33.3%;background:#6699cc;float: left;}
     .col1row2{width:100%;height:33.3%;background:#ffff66;float: left;}
     .col1row3{width:100%;height:33.3%;background:#66cc66;float: left;}
@@ -63,7 +61,7 @@
                     <span style="font-size:0.5rem;">星期二</span>
                 </div>
                 <div style="float:left;margin-left:16px;line-height:50px;">
-                   <iframe width="150" scrolling="no" height="18" frameborder="0" allowtransparency="true" src="http://i.tianqi.com/index.php?c=code&id=1&color=%23FFFFFF&bgc=%23&icon=1&wind=1&num=1&site=12"></iframe>
+                   <iframe width="125" scrolling="no" height="18" frameborder="0" allowtransparency="true" src="http://i.tianqi.com/index.php?c=code&id=1&color=%23FFFFFF&bgc=%23&icon=1&wind=1&num=1&site=12"></iframe>
                 </div>
             </div>
             <div class="headercenter">
@@ -72,37 +70,34 @@
                     <img src="img/logo.png" style="width: 12rem;vertical-align:middle;" >
                     <span style="font-size:1.8rem;">陕西省分行</span>
                     <img src="img/titleborder.png" class="titleborder">
-                </div>
-                
-            </div>
-            
+                </div>     
+            </div> 
             <div class="headerright" style="font-size:0.5rem;">凝聚爱心 呵护未来</div>
         </div>
-    	<div class="container">
-            <div class="left">
-                <div class="li1">123</div>
-                <label class="lab1" id='lab1'>1</label>
-            </div>
-            <div class="right">
+        <div id='wrap' class="containerall">
+            <div class="li1">123</div>
+            <label class="lab1" id='lab1'>1</label>         
+            <div style="width: 88%;height:100%;overflow:scroll;display: inline-block">
                 <div class="col1">
-                    <div class="col1row1"></div>
-                    <div class="col1row2"></div>
-                    <div class="col1row3"></div>
+                    <div class="col1row1">111</div>
+                    <div class="col1row2">222</div>
+                    <div class="col1row3">333</div>
                 </div>
                 <div class="col2">
-                    <div class="col2row1"></div>
+                    <div class="col2row1">444</div>
                     <div class="col2row2">
-                        <div class="col2row2col1"></div>
-                        <div class="col2row2col2"></div>
+                        <div class="col2row2col1">555</div>
+                        <div class="col2row2col2">6666</div>
                     </div>
                 </div>
                 <div class="col3">
-                    <div class="col3row1"></div>
-                    <div class="col3row2"></div>
-                    <div class="col3row3"></div>
+                    <div class="col3row1">777</div>
+                    <div class="col3row2">888</div>
+                    <div class="col3row3">999</div>
                 </div>
-            </div>   
+            </div>
         </div>
+    	
     	<div class="footer">
             <span>版权所有@中国银行陕西省分行</span>   
         </div>
