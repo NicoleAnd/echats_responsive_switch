@@ -1,122 +1,184 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="JS代码,侧边菜单,拉出菜单,高级菜单,导航菜单,jquery菜单" />
-<meta name="description" content="jQuery高级可停靠侧边栏，jquery实现的高级侧边导航菜单效果，更多侧边菜单,拉出菜单,高级菜单,导航菜单,jquery菜单请访问柯乐义JS代码频道。" />
-<title>jQuery高级可停靠侧边栏_柯乐义</title>
-<link type="text/css" rel="Stylesheet" href="http://keleyi.com/keleyi/phtml/jqmenu/2/keleyidock.css" />
-<script type="text/javascript" src="http://keleyi.com/keleyi/pmedia/jquery/jquery-1.10.2.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function () {
-var docked = 0;
+<meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link rel="stylesheet" type="text/css" href="css/hamburgers.css">
 
-$("#dock li ul").height($(window).height());
+    <style type="text/css">
+    .titlestyle{width: 100%;height: 25px;background: skyblue;text-align: left;line-height:25px;padding-left: 10px;
+/*background: linear-gradient(bottom , rgba(0, 0, 0, 0.61) , rgba(25, 69, 115, 0.7) 11% , rgba(26, 70, 117, 0.96) 45% , rgba(0, 0, 0, 0.77) 100%);
+background: -o-linear-gradient(bottom , rgba(0, 0, 0, 0.61) , rgba(25, 69, 115, 0.7) 11% , rgba(26, 70, 117, 0.96) 45% , rgba(0, 0, 0, 0.77) 100%);
+background: -ms-linear-gradient(bottom , rgba(0, 0, 0, 0.61) , rgba(25, 69, 115, 0.7) 11% , rgba(26, 70, 117, 0.96) 45% , rgba(0, 0, 0, 0.77) 100%);
+background: -moz-linear-gradient(bottom , rgba(0, 0, 0, 0.61) , rgba(25, 69, 115, 0.7) 11% , rgba(26, 70, 117, 0.96) 45% , rgba(0, 0, 0, 0.77) 100%);
+background: -webkit-linear-gradient(bottom , rgba(0, 0, 0, 0.61) , rgba(25, 69, 115, 0.7) 11% , rgba(26, 70, 117, 0.96) 45% , rgba(0, 0, 0, 0.77) 100%);*/
+background: linear-gradient(bottom , rgba(0, 0, 0, 0.61) , rgb(25, 67, 112) 10% , rgb(16, 43, 71) 100%);
+background: -o-linear-gradient(bottom , rgba(0, 0, 0, 0.61) , rgb(25, 67, 112) 10% , rgb(16, 43, 71) 100%);
+background: -ms-linear-gradient(bottom , rgba(0, 0, 0, 0.61) , rgb(25, 67, 112) 10% , rgb(16, 43, 71) 100%);
+background: -moz-linear-gradient(bottom , rgba(0, 0, 0, 0.61) , rgb(25, 67, 112) 10% , rgb(16, 43, 71) 100%);
+background: -webkit-linear-gradient(bottom , rgba(0, 0, 0, 0.61) , rgb(25, 67, 112) 10% , rgb(16, 43, 71) 100%);
 
-$("#dock .dock-keleyi-com").click(function () {
-$(this).parent().parent().addClass("docked").removeClass("free");
 
-docked += 1;
-var dockH = ($(window).height()) / docked
-var dockT = 0;
 
-$("#dock li ul.docked").each(function () {
-$(this).height(dockH).css("top", dockT + "px");
-dockT += dockH;
-});
-$(this).parent().find(".undock").show();
-$(this).hide();
 
-if (docked > 0)
-$("#content").css("margin-left", "250px");
-else
-$("#content").css("margin-left", "60px");
-});
-
-$("#dock .undock").click(function () {
-$(this).parent().parent().addClass("free").removeClass("docked")
-.animate({ left: "-180px" }, 200).height($(window).height()).css("top", "0px");
-
-docked = docked - 1;
-var dockH = ($(window).height()) / docked
-var dockT = 0;
-
-$("#dock li ul.docked").each(function () {
-$(this).height(dockH).css("top", dockT + "px");
-dockT += dockH;
-});
-$(this).parent().find(".dock-keleyi-com").show();
-$(this).hide();
-
-if (docked > 0)
-$("#content").css("margin-left", "250px");
-else
-$("#content").css("margin-left", "60px");
-});
-
-$("#dock li").hover(function () {
-$(this).find("ul").animate({ left: "40px" }, 200);
-}, function () {
-$(this).find("ul.free").animate({ left: "-180px" }, 200);
-});
-}); 
-</script>
+    }
+    
+	</style>
 </head>
 <body>
-<ul id="dock">
-<li id="links">
-<ul class="free">
-<li class="header"><a href="#" class="dock-keleyi-com">固定</a><a href="#" class="undock">隐藏</a>链接</li>
-<li><a href="http://keleyi.com/menu/cms/" >CMS</a></li><li><a href="http://keleyi.com/menu/net/" >.NET</a></li><li><a href="http://keleyi.com/menu/javascript/" >Javascript</a></li><li><a href="http://keleyi.com/menu/jquery/" >jQuery</a></li><li><a href="http://keleyi.com/menu/csharp/" >C#</a></li><li><a href="http://keleyi.com/menu/aspnet/" >ASP.NET</a></li><li><a href="http://keleyi.com/menu/mvc/" >MVC</a></li><li><a href="http://keleyi.com/menu/html5/" >HTML5</a></li>
-<li><a href="http://keleyi.com/menu/webqd/" >web前端</a></li><li><a href="http://keleyi.com/menu/sqlserver/" >SQL Server</a></li><li><a href="http://keleyi.com/menu/cpp/" >C++</a></li><li><a href="http://keleyi.com/menu/hbyy/" >汇编语言</a></li><li><a href="http://keleyi.com/menu/flhz/" >分类汇总</a></li><li><a href="http://keleyi.com/menu/other/" >其他</a></li><li><a href="http://keleyi.com/list/">最新文章</a></li><li><a href="http://keleyi.com/ziliao/js/zzbds.htm">JS正则表达式</a></li>
-</ul>
-</li>
-<li id="files">
-<ul class="free">
-<li class="header"><a href="#" class="dock-keleyi-com">固定</a><a href="#" class="undock">隐藏</a>游戏</li>
-<li><a href="http://keleyi.com/game/1/">HTML5捕鱼游戏</a></li>
-<li><a href="http://keleyi.com/game/2/">不上不下</a></li>
-<li><a href="http://keleyi.com/game/3/">打地鼠</a></li>
-<li><a href="http://keleyi.com/keleyi/phtml/silverlight/">猜数字</a></li>
-<li></li>
-</ul>
-</li>
-<li id="tools">
-<ul class="free">
-<li class="header"><a href="#" class="dock-keleyi-com">固定</a><a href="#" class="undock">隐藏</a>工具</li>
-<li><a href="http://keleyi.com/tool/md5.htm">MD5加密</a></li>
-<li><a href="http://keleyi.com/tool/htmlencode.htm" target="_blank">HTML编码与解码</a></li>
-<li><a href="http://keleyi.com/tool/urldecode.htm" target="_blank">URL编码与解码</a></li>
-<li><a href="http://keleyi.com/tool/regex.htm" target="_blank">.NET正则表达式匹配工具</a></li>
-<li><a href="http://keleyi.com/ziliao/googlejavascriptstyle.htm">JavaScript代码风格指南</a></li>
-<li><a href="http://keleyi.com/ziliao/unicode/">Unicode字符列表</a></li>
-<li><a href="http://keleyi.com/tool/color.htm" target="_blank" title="颜色选择器"><img src="http://keleyi.com/tool/color/colormap_80.gif" alt="颜色选择器" /></a></li>
-</ul>
-</li>
-</ul>
-<div id="content">
-<h1>keleyi.com</h1>
-<h2>jQuery高级可停靠侧边栏</h2>
-<p>
-把光标移动到左侧按钮上，相应的侧边栏会自动弹出。
-</p>
-<p>
-当光标离开栏目区域时，侧边栏自动隐藏。
-</p>
-<p>
-侧边栏弹出时，点击“固定”链接可以使相应的栏目固定，不自动隐藏。
-</p>
-<p>
-点击“隐藏”链接可以是相应栏目隐藏。
-</p>
-<p>
-原文：<a href="http://keleyi.com/a/bjac/mt97p5y9.htm" target="_blank">http://keleyi.com/a/bjac/mt97p5y9.htm</a>
-</p>
-</div>
+	<div class="wrap">
+		<!-- 顶部 -->
+		<div class="header">
+            <div class="headerleft">
+                <span style="font-size:1.8rem;float:left;line-height:50px;margin-left: 10px;">15:29:59</span>
+                <div style="float: left;margin-left:10px;">
+                    <span style="font-size:0.5rem;">2017/10/16</span>
+                    <span style="font-size:0.5rem;">星期二</span>
+                </div>
+            </div>
+            <div class="headercenter">
+                <div class="headercenterdiv">
+                    <img src="img/titleborder1.png" class="titleborder">
+                    <img src="img/logo.png" style="width: 12rem;vertical-align:middle;" >
+                    <span style="font-size:1.8rem;">陕西省分行</span>
+                    <img src="img/titleborder.png" class="titleborder">
+                </div>         
+            </div>  
+            <div class="headerright">
+                <iframe width="130" scrolling="no" height="30" frameborder="0" allowtransparency="true" src="http://i.tianqi.com/index.php?c=code&id=1&color=%23FFFFFF&bgc=%23&icon=1&wind=1&num=1&site=12"></iframe>
+            </div>
+        </div>
+		<div id='wrap1' class="containerall">
+			<ul class="containercon">
+				<li class="li1">
+					<div class="demopage">
+                    <div class="control">
+                        <a href="javascript:void(0);" id="goD">
+                            <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                    <div id="marquee2">
+                        <ul>
+                            <li><a href="#"><div style="height:50px;">123</div></a></li>
+                            <li><a href="#"><div style="height:50px;">123</div></a></li>
+                            <li><a href="#"><div style="height:50px;">123</div></a></li>
+                            <li><a href="#"><div style="height:50px;">123</div></a></li>
+                            <li><a href="#"><div style="height:50px;">123</div></a></li>
+                            <li><a href="#"><div style="height:50px;">123</div></a></li>
+                            <li><a href="#"><div style="height:50px;">123</div></a></li>
+                            <li><a href="#"><div style="height:50px;">123</div></a></li>
+                            <li><a href="#"><div style="height:50px;">123</div></a></li>
+                            <li><a href="#"><div style="height:50px;">123</div></a></li>
+                            <li><a href="#"><div style="height:50px;">123</div></a></li>
+                            <li><a href="#"><div style="height:50px;">123</div></a></li>
+                            <li><a href="#"><div style="height:50px;">123</div></a></li>                             
+                        </ul>
+                    </div>
+                    <div class="control">
+                        <a href="javascript:void(0);" id="goU">
+                            <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                </div>
+				</li>
+				<label class="lab1" id='lab1'></label>
+				<li class="li2">
+					<div style="width: 100%;height:100%;">
+						<div class="col1">
+							<div class="col1row1 borderstyle1">
+								<div class="titlestyle">人口分布</div>
+								<div>123214324</div>
+							</div>
+							<div class="col1row2 borderstyle1">
+								<div class="titlestyle">人口分布</div>
+								<div>123214324</div>
+							</div>
+							<div class="col1row3 borderstyle1">
+								<div class="titlestyle">人口分布</div>
+								<div>123214324</div>
+							</div>
+						</div>
+						<div class="col2">
+							<div class="col2row1 borderstyle1">
+								<div class="titlestyle">人口分布</div>
+								<div>123214324</div>
+							</div>
+							<div class="col2row2">
+								<div class="col2row2col1 borderstyle1">
+									<div class="titlestyle">人口分布</div>
+									<div>123214324</div>
+								</div>
+								<div class="col2row2col2 borderstyle1">
+									<div class="titlestyle">人口分布</div>
+									<div>123214324</div>
+								</div>
+							</div>
+						</div>
+						<div class="col3">
+							<div class="col3row1 borderstyle1">
+								<div class="titlestyle">人口分布</div>
+								<div>123214324</div>
+							</div>
+							<div class="col3row2 borderstyle1">
+								<div class="titlestyle">人口分布</div>
+								<div>123214324</div>
+							</div>
+							<div class="col3row3 borderstyle1">
+								<div class="titlestyle">人口分布</div>
+								<div>123214324</div>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="footer">
+            <span>版权所有@中国银行陕西省分行</span>   
+        </div>
+	</div>
+	<script src="js/jquery-3.2.1.js"></script>
+	<script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.9.0/jquery.min.js"></script>
+	<script src="js/navmove.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/Marquee.js"></script>
 
-<div style="text-align:center;clear:both">
-<p>来源：<a href="http://keleyi.com" target="_blank">网络</a>　代码整理：<a href="http://keleyi.com" target="_blank">柯乐义</a>　感谢：<a href="http://keleyi.com" target="_blank">keleyi</a></p>
-<p>转载请注明出处，此代码仅供学习交流，请勿用于商业用途。</p>
-</div>
+    <script type="text/javascript">
+    var num = 1;
+    $(function() { 
+    	//一次纵向滚动一个
+        $('#marquee2').kxbdSuperMarquee({
+            isAuto:false,
+            distance:60,
+            time:3,
+            btnGo:{up:'#goU',down:'#goD'},
+            direction:'down'
+        });
+        var navheight = $(window).height()-150;
+        $('#marquee2').css('height',navheight);
+        var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.call(t))for(var c in t)Object.prototype.hasOwnProperty.call(t,c)&&o.call(r,t[c],c,t);else for(var e=0,l=t.length;l>e;e++)o.call(r,t[e],e,t)};
+
+
+        $("#marquee2 li").click(function() {
+            $("#marquee2 li").eq($(this).index()).addClass("navactive").siblings().removeClass("navactive");
+        });
+        
+        
+        // var hamburgers = document.querySelectorAll(".hamburger");
+        // if (hamburgers.length > 0) {
+        //   forEach(hamburgers, function(hamburger) {
+        //     hamburger.addEventListener("click", function() {
+        //       this.classList.toggle("is-active");
+        //     }, false);
+        //   });
+        // };
+            
+    })
+    </script>
 </body>
 </html>

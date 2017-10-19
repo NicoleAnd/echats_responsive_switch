@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link rel="stylesheet" type="text/css" href="css/hamburgers.css">
+    
+    <style type="text/css">
+    a,img{border:0;}
+    *{margin:0;padding:0;list-style-type:none;}
+    ul,ol,li{list-style: none;}
+    body {color: #fff;font-size: 1rem;text-align: center;background:#2b354d;}
+
+    /*头部样式*/
+    .header{width: 100%;height: 50px;position: absolute;z-index:5;text-align:center;line-height:50px;border-bottom: 2px solid #18426f;box-shadow: 0px 6px 20px #000;}
+    .headerleft{width: 26%;float: left;text-align: left;}
+    .titleborder{width: 9.5rem;vertical-align:middle;}
+    .headercenter{width: 48%;float: left;text-align: center;color: #000;line-height:50px;background:-webkit-radial-gradient(circle farthest-side,#fff -16%,transparent 84%);}
+    .headercenterdiv{height:50px;}
+    .headerright{width: 26%;float: left;text-align: right;line-height:50px;}
+
+    /*中间样式*/
+    .containerall{width: 100%;position: absolute;z-index:10;top:60px;bottom: 25px;clear:both;}
+    
+    /*右内容*/
+    .right{width:93%;height:100%;float: left;}
+    .col1{width:23%;height:100%;background:#ff6699;float: left;}
+    .col2{width:50%;height:100%;float: left;}
+    .col3{width:23%;height:100%;background:#66cc66;float: left;}
+    .col1row1{width:100%;height:33.3%;background:#6699cc;float: left;}
+    .col1row2{width:100%;height:33.3%;background:#ffff66;float: left;}
+    .col1row3{width:100%;height:33.3%;background:#66cc66;float: left;}
+    .col2row1{width:100%;height:66.6%;float: left;}
+    .col2row2{width:100%;height:33.3%;background:#6699cc;float: left;}
+    .col2row2col1{width:50%;height:100%;background:#ffff66;float: left;}
+    .col2row2col2{width:50%;height:100%;background:#ff6699;float: left;}
+    .col3row1{width:100%;height:33.3%;background:#6699cc;float: left;}
+    .col3row2{width:100%;height:33.3%;background:#ffff66;float: left;}
+    .col3row3{width:100%;height:33.3%;background:#66cc66;float: left;}
+
+    /*底部样式*/
+    .footer{width: 100%;height: 25px;position: absolute;z-index:5;bottom: 0;border-top: 2px solid #18426f;}
+    .footer span{font-size: 0.6rem}
+
+    /*左导航*/
+    #wrap1 li{width: 10%;float: left;height: 100%;overflow: hidden;text-align: center;}
+    #wrap1 li.li1{width:10%;height:100%;}
+    #wrap1 li.li2{width:90%;height:100%;}
+    .containercon{height: 100%;}
+    #wrap1 label{float: left;width: 6px;height: 100%;position: absolute;cursor: e-resize;}
+    #wrap1 label.lab1{left: 10%;background: #f00;height:100%;}
+
+    /*导航上下*/
+    .demopage{width:100%;margin:0 auto;}
+    .demopage h2{font-size:14px;margin:20px 0;}
+    /* #marquee2 */
+    #marquee2{width:100%;overflow:hidden;}
+    #marquee2 ul li{float:left;/*border:1px solid #ddd;*/height:62px;line-height: 62px;width:100%;
+        border: 2px solid #18426f;box-shadow: 0px 6px 20px #000;}
+    #marquee2 ul li a{color:#fff;font-size: 1.4rem;text-align: center}
+    #marquee2 ul li a:hover{color:#fff;text-decoration:none;}
+    #marquee2 ul li:hover{background:#556fad;}
+    .navactive{ background: #556fad; }
+    
+    /* control */
+    .control{height:35px;background:rgba(70,85,124,0.5);position: relative;}
+    .glyphicon {top: 7px;font-size: 20px;color:#fff;}
+    .control:hover{background: #556fad}
+    .control:active{background:#46557c}
+    .hamburger{ transition: all 0.5s ease-in-out;position: absolute;left: 7%;top: 3px;z-index: 999;}
+    .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {width: 30px;background-color: #fff;}
+   
+    
+    
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+    	<div class="header">
+            <div class="headerleft">
+                <span style="font-size:1.8rem;float:left;line-height:50px;margin-left: 10px;">15:29:59</span>
+                <div style="float: left;margin-left:10px;">
+                    <span style="font-size:0.5rem;">2017/10/16</span>
+                    <span style="font-size:0.5rem;">星期二</span>
+                </div>
+            </div>
+            <div class="headercenter">
+                <div class="headercenterdiv">
+                    <img src="img/titleborder1.png" class="titleborder">
+                    <img src="img/logo.png" style="width: 12rem;vertical-align:middle;" >
+                    <span style="font-size:1.8rem;">陕西省分行</span>
+                    <img src="img/titleborder.png" class="titleborder">
+                </div>
+                
+            </div>
+            
+            <div class="headerright" style="line-height:80px;padding-right: 10px;">
+                <iframe width="130" scrolling="no" height="30" frameborder="0" allowtransparency="true" src="http://i.tianqi.com/index.php?c=code&id=1&color=%23FFFFFF&bgc=%23&icon=1&wind=1&num=1&site=12"></iframe>
+            </div>
+        </div>
+    	<div id='wrap1' class="containerall">
+            <ul class="containercon">
+                <!-- <div class="nav-label hamburger hamburger--collapse">
+                    <div class="hamburger-box">
+                      <div class="hamburger-inner"></div>
+                    </div>
+                </div> -->
+                <li class="li1">
+                    
+                    111
+                </li>
+                <label class="lab1" id='lab1'>1</label>
+                <li class="li2">
+                    <div style="width: 100%;height:100%;">
+                        <div class="col1">
+                            <div class="col1row1">111</div>
+                            <div class="col1row2">222</div>
+                            <div class="col1row3">333</div>
+                        </div>
+                        <div class="col2">
+                            <div class="col2row1">444</div>
+                            <div class="col2row2">
+                                <div class="col2row2col1">555</div>
+                                <div class="col2row2col2">6666</div>
+                            </div>
+                        </div>
+                        <div class="col3">
+                            <div class="col3row1">777</div>
+                            <div class="col3row2">888</div>
+                            <div class="col3row3">999</div>
+                        </div>
+                    </div>
+                </li>
+            </ul> 
+        </div>
+    	<div class="footer">
+            <span>版权所有@中国银行陕西省分行</span>   
+        </div>
+    </div>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/navmove.js"></script>
+    <script src="js/Marquee.js"></script>
+    <script type="text/javascript">
+    var num = 0;
+    $(function() { 
+        $(".left li").click(function() {
+            $(".left li").eq($(this).index()).addClass("navactive").siblings().removeClass("navactive");
+        });
+        
+        // $(".nav-label").click(function(){
+        //     if((num%2)==0){
+                
+        //         $(".li1").css({
+        //             "width":"1px"
+        //         });
+        //         $(".label1").css({
+        //             "left":"0px",
+        //         });
+        //         $(".li2").css({
+        //             "width":"100%",
+        //         });
+                
+        //         num++;
+        
+        //     }else{
+                
+        //         $(".li1").css({
+        //             "width":"140px"
+        //         });
+        //         $(".label1").css({
+        //             "left":"135px",
+        //         });
+        //         $(".li2").css({
+        //             "width":"90%",
+        //         });
+        //         num++;
+   
+        //     }
+        // });
+
+        //一次纵向滚动一个
+        $('#marquee2').kxbdSuperMarquee({
+            isAuto:false,
+            distance:60,
+            time:3,
+            btnGo:{up:'#goU',down:'#goD'},
+            direction:'down'
+        });
+        var navheight = $(window).height()-150;
+        $('#marquee2').css('height',navheight);
+        
+       
+        var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.call(t))for(var c in t)Object.prototype.hasOwnProperty.call(t,c)&&o.call(r,t[c],c,t);else for(var e=0,l=t.length;l>e;e++)o.call(r,t[e],e,t)};
+
+        var hamburgers = document.querySelectorAll(".hamburger");
+        if (hamburgers.length > 0) {
+          forEach(hamburgers, function(hamburger) {
+            hamburger.addEventListener("click", function() {
+              this.classList.toggle("is-active");
+            }, false);
+          });
+        }
+
+        // 移动导航div
+        var clickX, leftOffset, inx, nextW2, nextW;
+    var dragging  = false;
+    var doc       = document;
+    var labBtn    = $("#wrap1").find('label');
+    var wrapWidth = $("#wrap1").width();
+
+    labBtn.bind('mousedown',function(){
+            dragging   = true;
+            leftOffset = $("#wrap1").offset().left;
+            inx        = $(this).index('label');
+        }
+    );
+
+    doc.onmousemove = function(e){
+        if (dragging) {
+            //labBtn.eq(inx).prev().text( labBtn.eq(inx).prev().width() );
+            //labBtn.eq(inx).next().text( labBtn.eq(inx).next().width() );
+            //--------------------------------------------
+            clickX = e.pageX;
+            //$("#test").text( '鼠标位置：' + clickX );
+            
+            //判断第几个拖动按钮
+            if( inx == 0 ){
+
+                //第一个拖动按钮左边不出界
+                if(clickX > leftOffset) {
+                    labBtn.eq(inx).css('left', clickX - 7 - leftOffset + 'px');//按钮移动
+
+                    labBtn.eq(inx).prev().width( clickX-leftOffset + 'px');
+                    nextW2 = clickX-leftOffset;
+                    labBtn.eq(inx).next().width( wrapWidth - nextW2 - labBtn.eq(inx+1).next().width() + 'px');
+                } else {
+                    labBtn.eq(inx).css('left', '0px');
+                }
+
+
+                if(clickX > (labBtn.eq(inx+1).offset().left-5)) {
+                    //第一个按钮右边不出界
+                    labBtn.eq(inx).css('left', parseFloat(labBtn.eq(inx+1).css('left')) -11 + 'px');
+                    //第一个按钮，左右容器不出界
+                    labBtn.eq(inx).prev().width( labBtn.eq(inx).offset().left + 6 - leftOffset + 11 + 'px' );
+                    labBtn.eq(inx).next().width( '0px' );
+                } 
+
+            } else {
+
+                //第二个拖动按钮左边不出界
+                if( (clickX) > labBtn.eq(inx-1).offset().left + 10 ) {
+                    labBtn.eq(inx).css('left', clickX - 7 - leftOffset + 'px'); //按钮移动
+
+                    labBtn.eq(inx).prev().width( (clickX-leftOffset-labBtn.eq(inx-1).prev().width()) + 'px');
+                    nextW = clickX - leftOffset;
+                    labBtn.eq(inx).next().width( wrapWidth - nextW  + 'px');
+                } else {
+                    //第二个按钮向左移动不出界
+                    labBtn.eq(inx).css('left', parseFloat(labBtn.eq(inx-1).css('left')) +10 + 'px');
+
+                    //第二个按钮左右容器，不出界
+                    labBtn.eq(inx).prev().width('0px')
+                    labBtn.eq(inx).next().width( wrapWidth - labBtn.eq(inx-1).prev().width() );
+                }
+
+                if( clickX >= (leftOffset + wrapWidth) ) {
+                    //第二个按钮右边不出界
+                    labBtn.eq(inx).css('left', wrapWidth -10 + 'px'); //减去按钮的宽度
+                    //第二个按钮左右容器，右边不出界
+                    labBtn.eq(inx).prev().width( wrapWidth - labBtn.eq(inx-1).prev().width());
+                    labBtn.eq(inx).next().width( '0px' );
+                }
+
+            }
+        }
+    };
+
+    $(doc).mouseup(function(e) {
+        dragging = false;
+        e.cancelBubble = true;
+    })
+            
+    })
+
+    </script>
+</body>
+
+</html>

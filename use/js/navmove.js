@@ -2,30 +2,30 @@ $(function(){
     var clickX, leftOffset, inx, nextW2, nextW;
     var dragging  = false;
     var doc       = document;
-    var labBtn    = $("#wrap").find('label');
-    var wrapWidth = $("#wrap").width();
+    var labBtn    = $("#wrap1").find('label');
+    var wrapWidth = $("#wrap1").width();
 
     labBtn.bind('mousedown',function(){
             dragging   = true;
-            leftOffset = $("#wrap").offset().left;
+            leftOffset = $("#wrap1").offset().left;
             inx        = $(this).index('label');
         }
     );
 
     doc.onmousemove = function(e){
         if (dragging) {
-            labBtn.eq(inx).prev().text( labBtn.eq(inx).prev().width() );
-            labBtn.eq(inx).next().text( labBtn.eq(inx).next().width() );
+            //labBtn.eq(inx).prev().text( labBtn.eq(inx).prev().width() );
+            //labBtn.eq(inx).next().text( labBtn.eq(inx).next().width() );
             //--------------------------------------------
             clickX = e.pageX;
-            $("#test").text( '鼠标位置：' + clickX );
+            //$("#test").text( '鼠标位置：' + clickX );
             
             //判断第几个拖动按钮
             if( inx == 0 ){
 
                 //第一个拖动按钮左边不出界
                 if(clickX > leftOffset) {
-                    labBtn.eq(inx).css('left', clickX - 7 - leftOffset + 'px');//按钮移动
+                    labBtn.eq(inx).css('left', clickX - 3 - leftOffset + 'px');//按钮移动
 
                     labBtn.eq(inx).prev().width( clickX-leftOffset + 'px');
                     nextW2 = clickX-leftOffset;
