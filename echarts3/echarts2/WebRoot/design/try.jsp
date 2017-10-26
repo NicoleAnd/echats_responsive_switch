@@ -12,9 +12,11 @@
     <link rel="stylesheet" type="text/css" href="css/nav.css">
     <link rel="stylesheet" type="text/css" href="css/hamburgers.css">
     <style>
+    body{min-width:1024px;}
     .nav-icon{font-size:1.6rem;top:2px;padding-right:8px;}
     .add{font-size:10px;}
-    .bodystyle{padding:0 8px;}
+    /* .bodystyle{padding:0 8px;} */
+    
     </style>
 </head>
 <body>
@@ -30,10 +32,9 @@
             </div>
             <div class="headercenter">
                 <div class="headercenterdiv">
-                    <img src="img/titleborder1.png" class="titleborder">
-                    <img src="img/logo.png" style="width: 12rem;vertical-align:middle;" >
-                    <span style="font-size:1.8rem;">陕西省分行 大数据可视化平台</span>
-                    <img src="img/titleborder.png" class="titleborder">
+					<img src="img/logo.png" style="width: 11rem;vertical-align:middle;" >
+					<span style="font-size:1.5rem;">陕西省分行&nbsp;&nbsp;</span>
+					<span style="font-size:1.8rem;">|&nbsp;&nbsp;大数据可视化平台</span>
                 </div>         
             </div>  
             <div class="headerright">
@@ -96,47 +97,52 @@
 				<li class="li2">
 					<div style="width: 100%;height:100%;">
 						<div class="col1">
-							<div class="col1row1 borderstyle1">
+							<%-- <div class="col1row1 borderstyle1">
 								<div class="titlestyle">人口分布</div>
 								<div class="bodystyle"><%@include file="echart0.jsp"%></div>	
+							</div> --%>
+							<div class="col1row1 borderstyle1">
+								<div class="titlestyle">人口分布</div>
+								<div class="bodystyle"><iframe src="echart0.jsp"  frameborder="0" width="100%" height="100%" scrolling="no" ></iframe></div>	
 							</div>
+							
 							<div class="col1row2 borderstyle1">
 								<div class="titlestyle">人口分布</div>
-								<div class="bodystyle"><%@include file="echart1.jsp"%></div>
+								<div class="bodystyle"><iframe src="echart1.jsp"  frameborder="0" width="100%" height="100%" scrolling="no" ></iframe></div>
 							</div>
 							<div class="col1row3 borderstyle1">
 								<div class="titlestyle">人口分布</div>
-								<div class="bodystyle"><%@include file="echart2.jsp"%></div>
+								<div class="bodystyle"><iframe src="echart2.jsp"  frameborder="0" width="100%" height="100%" scrolling="no" ></iframe></div>
 							</div>
 						</div>
 						<div class="col2">
 							<div class="col2row1 borderstyle1">
 								<div class="titlestyle">人口分布</div>
-								<div class="bodystyle"><%@include file="echart111.jsp"%></div>
+								<div class="bodystyle"><iframe src="echart111.jsp"  frameborder="0" width="100%" height="100%" scrolling="no" ></iframe></div>
 							</div>
 							<div class="col2row2">
 								<div class="col2row2col1 borderstyle1">
 									<div class="titlestyle">人口分布</div>
-									<div class="bodystyle"><%@include file="echart4.jsp"%></div>
+									<div class="bodystyle"><iframe src="echart4.jsp"  frameborder="0" width="100%" height="100%" scrolling="no" ></iframe></div>
 								</div>
 								<div class="col2row2col2 borderstyle1">
 									<div class="titlestyle">人口分布</div>
-									<div class="bodystyle"><%@include file="echart5.jsp"%></div>
+									<div class="bodystyle"><iframe src="echart5.jsp"  frameborder="0" width="100%" height="100%" scrolling="no" ></iframe></div>
 								</div>
 							</div>
 						</div>
 						<div class="col3">
 							<div class="col3row1 borderstyle1">
 								<div class="titlestyle">人口分布</div>
-								<div class="bodystyle"><%@include file="echart6.jsp"%></div>
+								<div class="bodystyle"><iframe src="echart6.jsp"  frameborder="0" width="100%" height="100%" scrolling="no" ></iframe></div>
 							</div>
 							<div class="col3row2 borderstyle1">
 								<div class="titlestyle">人口分布</div>
-								<div class="bodystyle"><%@include file="echart7.jsp"%></div>
+								<div class="bodystyle"><iframe src="echart7.jsp"  frameborder="0" width="100%" height="100%" scrolling="no" ></iframe></div>
 							</div>
 							<div class="col3row3 borderstyle1">
 								<div class="titlestyle">人口分布</div>
-								<div class="bodystyle"><%@include file="echart8.jsp"%></div>
+								<div class="bodystyle"><iframe src="echart8.jsp"  frameborder="0" width="100%" height="100%" scrolling="no" ></iframe></div>
 							</div>
 						</div>
 					</div>

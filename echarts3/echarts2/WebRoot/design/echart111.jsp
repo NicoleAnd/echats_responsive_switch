@@ -4,7 +4,7 @@
 <html>
   <head>  
     <title>echart模拟</title>
-	<script src="js/echarts.js"></script>
+	<script src="js/echarts.min.js"></script>
 	<!-- <script src="js/shaanxi_theme.js"></script> -->
 	<script src="js/SXmap1_theme.js"></script>
 	<script src="js/shanxi.js"></script>

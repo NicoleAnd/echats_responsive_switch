@@ -37,19 +37,19 @@
         x: 'left',
         width:5,
   		height:5,
-  		itemGap:0,   
+  		itemGap:-15,   
 	},
     /* toolbox: {
         feature: {
             saveAsImage: {}
         }
     }, */
-   /*  grid: {
+    grid: {
         left: '15%',
-        right: '15%',
-        bottom: '15%',
-        top:'15%'  
-    }, */
+        /* right: '2%', 
+        bottom: '30%',
+        top:'10%'   */
+    },
     xAxis : [
         {
             type : 'category',

@@ -30,14 +30,16 @@
         x: 'left',
         width:5,
   		height:5,
-  		itemGap:0,    
+  		itemGap:-15, 
+  		
     },
-    /* grid: {
-        left: '3%',
-        right: '4%',
-        bottom: '3%',
-        containLabel: true
-    }, */
+
+     grid: {
+        left: '15%',
+        /* right: '2%', 
+        bottom: '30%',
+        top:'10%'   */
+    },
     xAxis : [
         {
             type : 'category',

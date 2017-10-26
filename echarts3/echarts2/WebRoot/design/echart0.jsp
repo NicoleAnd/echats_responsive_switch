@@ -30,7 +30,13 @@
 		        left:'0', */
 		        width:5,
     			height:5,
-    			itemGap:0,
+    			itemGap:-15,
+		    },
+		     grid: {
+		        left: '15%',
+		        /* right: '2%', 
+		        bottom: '30%',
+		        top:'10%'   */
 		    },
 		    series: [
 		        {
