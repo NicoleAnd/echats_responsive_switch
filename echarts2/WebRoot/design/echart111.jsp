@@ -4,7 +4,7 @@
 <html>
   <head>  
     <title>echart模拟</title>
-	<script src="js/echarts.js"></script>
+	<script src="js/echarts.min.js"></script>
 	<!-- <script src="js/shaanxi_theme.js"></script> -->
 	<script src="js/SXmap1_theme.js"></script>
 	<script src="js/shanxi.js"></script>
@@ -78,9 +78,16 @@ var depositJson = {//存款
                 trigger: 'item'
             },
             legend: {
-                orient: 'vertical',
-                left: '0',
-                data:['存款','贷款'] 
+                data:['存款','贷款'],
+                textStyle:{    //图例文字的样式
+			        color:'white',
+			        fontSize: 10
+			    },
+		        orient: 'vertical',
+		        x: 'left',
+		        width:5,
+		  		height:5,
+		  		itemGap:0,       
             },
             visualMap: {
                 min: 100,

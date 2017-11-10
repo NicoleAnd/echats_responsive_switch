@@ -27,8 +27,17 @@
 		        color:'white',
 		        fontSize: 10
 		    },
-            orient:'vertical',
-            left:'0'
+            orient: 'vertical',
+	        x: 'left',
+	        width:5,
+	  		height:5,
+	  		itemGap:0,
+	    },
+	     grid: {
+        left: '15%',
+	        /* right: '2%', 
+	        bottom: '30%',
+	        top:'10%'   */
 	    },
 	    toolbox: {
 	        show : true,

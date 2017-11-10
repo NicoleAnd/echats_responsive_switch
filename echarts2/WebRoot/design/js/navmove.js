@@ -22,20 +22,22 @@ $(function(){
             
             //判断第几个拖动按钮
             if( inx == 0 ){
-
                 //第一个拖动按钮左边不出界
-                if(clickX > leftOffset) {
-                    labBtn.eq(inx).css('left', clickX - 3 - leftOffset + 'px');//按钮移动
-
-                    labBtn.eq(inx).prev().width( clickX-leftOffset + 'px');
-                    nextW2 = clickX-leftOffset;
-                    labBtn.eq(inx).next().width( wrapWidth - nextW2 - labBtn.eq(inx+1).next().width() + 'px');
+                if(clickX > leftOffset ) {
+                	if(clickX>500){
+                		clickX=400;
+                	}
+                	labBtn.eq(inx).css('left', clickX - 3 - leftOffset + 'px');//按钮移动
+            		
+            		labBtn.eq(inx).prev().width( clickX-leftOffset + 'px');
+            		nextW2 = clickX-leftOffset;
+            		labBtn.eq(inx).next().width( (parseInt(wrapWidth - nextW2)-5) + 'px');
                 } else {
                     labBtn.eq(inx).css('left', '0px');
                 }
 
 
-                if(clickX > (labBtn.eq(inx+1).offset().left-5)) {
+                if(clickX > (labBtn.eq(inx).offset().left + 5)) {
                     //第一个按钮右边不出界
                     labBtn.eq(inx).css('left', parseFloat(labBtn.eq(inx+1).css('left')) -11 + 'px');
                     //第一个按钮，左右容器不出界

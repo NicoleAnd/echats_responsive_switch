@@ -18,10 +18,23 @@
 		        trigger: 'item',
 		        formatter: "{a} <br/>{b}: {c} ({d}%)"
 		    },
-		    legend: {
+		    legend: {  
+		        data:['直接访问','邮件营销','联盟广告','视频广告'],
+		        textStyle:{    //图例文字的样式
+			        color:'white',
+			        fontSize: 8
+			    },
 		        orient: 'vertical',
 		        x: 'left',
-		        data:['直接访问','邮件营销','联盟广告','视频广告']
+		        width:5,
+		  		height:5,
+		  		itemGap:0,  
+		    },
+		     grid: {
+		        left: '15%',
+		        /* right: '2%', 
+		        bottom: '30%',
+		        top:'10%'   */
 		    },
 		    series: [
 		        {

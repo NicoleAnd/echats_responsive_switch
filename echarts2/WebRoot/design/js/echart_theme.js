@@ -431,7 +431,8 @@
         "legend": {
             "textStyle": {
                 "color": "#ffffff"
-            }
+            },
+	        
         },
         "tooltip": {
             "axisPointer": {
