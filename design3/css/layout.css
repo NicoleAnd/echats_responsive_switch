@@ -1,0 +1,22 @@
+.wrap{width: 100%;height: 100%;color: #fff;}
+/*头部样式*/
+.header{width: 100%;height: 50px;position: absolute;z-index:5;text-align:center;line-height:50px;border-bottom: 2px solid #18426f;box-shadow: 0px 6px 20px #000;}
+.headerleft{width: 26%;float: left;text-align: left;}
+.titleborder{width: 9.5rem;vertical-align:middle;}
+.headercenter{width: 48%;float: left;text-align: center;color: #000;line-height:50px;
+	/* background: radial-gradient(circle farthest-side,#fff -16%,transparent 84%);
+	background: -moz-radial-gradient(circle farthest-side,#fff -16%,transparent 84%);  Firefox
+    background: -webkit-radial-gradient(circle farthest-side,#fff -16%,transparent 84%); Safari Chrome
+    background: -ms-radial-gradient(circle farthest-side,#fff -16%,transparent 84%);    IE
+    background: -o-radial-gradient(circle farthest-side,#fff -16%,transparent 84%);     Opera */
+	}
+.headercenterdiv{height:54px;background:url('../img/navSub7.png') center no-repeat}
+.headerright{width: 26%;float: left;text-align: right;padding-right: 10px;}
+
+/*底部样式*/
+.footer{width: 100%;height: 25px;position: absolute;z-index:5;bottom: 0;border-top: 2px solid #18426f;line-height:25px;}
+.footer span{font-size: 12px}
+.footer a{display: block;width:20px;height:25px;position: relative;float: left;}
+.footer a:hover{background:#556fad}
+/*中间样式*/
+.containerall{width: 100%;position: absolute;z-index:10;top:50px;bottom: 25px;clear:both;}
