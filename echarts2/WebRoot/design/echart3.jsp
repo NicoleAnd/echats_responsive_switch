@@ -35,6 +35,7 @@
 	    },
 	     grid: {
         left: '15%',
+        bottom: '16%',
 	        /* right: '2%', 
 	        bottom: '30%',
 	        top:'10%'   */

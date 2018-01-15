@@ -1,0 +1,6 @@
+try3.jsp ------ layout = jsp+jsp+...
+try4.jsp ------ layout2 = jsp
+
+http://127.0.0.1:8080/echarts2/design/try3-3.jsp 无联动
+http://127.0.0.1:8080/echarts2/design/try3-5.jsp 联动布局
+http://127.0.0.1:8080/echarts2/design/try3-4.jsp 无滚动的纯响应式

@@ -6,7 +6,6 @@
  * @link https://github.com/jonsuh/hamburgers
  */
 .hamburger {
-  /* // padding: 15px 15px; */
   display: inline-block;
   cursor: pointer;
   transition-property: opacity, -webkit-filter;
@@ -17,14 +16,21 @@
   font: inherit;
   color: inherit;
   text-transform: none;
-  background-color: rgba(24,66,111,0.5);
-  border: 1px solid #18426f;box-shadow: 0px 6px 20px #000;
   margin: 0;
   overflow: visible;
-  // width: 4%;
+  position:absolute;
+  border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+
    }
   .hamburger:hover {
-    opacity: 0.7; }
+    	/* background: -gradient(linear, 100% 61%, 43% 100%, from(#22d66c), to(#4ad583));
+	    background: -o--gradient(linear, 100% 61%, 43% 100%, from(#22d66c), to(#4ad583));
+	    background: -ms--gradient(linear, 100% 61%, 43% 100%, from(#22d66c), to(#4ad583));
+	    background: -moz-gradient(linear, 100% 61%, 43% 100%, from(#22d66c), to(#4ad583));
+	    background: -webkit-gradient(linear, 100% 61%, 43% 100%, from(#22d66c), to(#4ad583)); */
+	    background: #FF6666;
+	    border:1px solid #FFCCCC;}
 
 .hamburger-box {
   width: 18px;

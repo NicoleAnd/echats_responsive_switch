@@ -36,6 +36,10 @@
 
      grid: {
         left: '15%',
+        
+        /* echart图表位置 */
+        bottom: '16%',
+        
         /* right: '2%', 
         bottom: '30%',
         top:'10%'   */

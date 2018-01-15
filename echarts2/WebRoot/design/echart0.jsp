@@ -34,8 +34,10 @@
 		    },
 		     grid: {
 		        left: '15%',
+		        
+		        bottom: '20%',
 		        /* right: '2%', 
-		        bottom: '30%',
+		        
 		        top:'10%'   */
 		    },
 		    series: [

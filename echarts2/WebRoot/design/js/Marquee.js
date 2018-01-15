@@ -278,7 +278,7 @@
 	$.fn.kxbdSuperMarquee.defaults = {
 		isMarquee:false,//是否为Marquee
 		isEqual:true,//所有滚动的元素长宽是否相等,true,false
-		loop: 0,//循环滚动次数，0时无限
+//		loop: 100,//循环滚动次数，0时无限
 		newAmount:3,//加速滚动的步长
 		eventA:'mousedown',//鼠标事件，加速
 		eventB:'mouseup',//鼠标事件，原速

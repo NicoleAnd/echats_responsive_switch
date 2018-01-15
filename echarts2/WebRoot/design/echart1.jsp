@@ -6,12 +6,14 @@
     <title>echart模拟</title>
 	<script src="js/echarts.min.js"></script>
 	<script src="js/echart_theme.js"></script>
-	
+	<style>
+		body{margin:0;padding:0;}
+	</style>
   </head>
   
   <body>
     <div id="main1" style="width:100%;height:100%;"></div>
-</body>
+  </body>
 <script type="text/javascript">
     var echart=echarts.init(document.getElementById('main1'),'echart_theme');
         var option = {
@@ -46,6 +48,7 @@
     }, */
     grid: {
         left: '15%',
+        bottom: '30%',
         /* right: '2%', 
         bottom: '30%',
         top:'10%'   */
@@ -54,7 +57,7 @@
         {
             type : 'category',
             boundaryGap : false,
-            data : ['周一','周二','周三','周四','周五','周六','周日'],
+            data : ['二环世纪星支行','周二','周三','周四','周五','周六','周日'],
         	axisLabel:{  
                          interval:0,//横轴信息全部显示  
                          rotate:-30,//-30度角倾斜显示  

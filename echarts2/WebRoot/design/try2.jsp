@@ -12,28 +12,30 @@
     <link rel="stylesheet" type="text/css" href="css/nav.css">
     <link rel="stylesheet" type="text/css" href="css/hamburgers.css">
     <style>
-    /* body{min-width:1024px;} */
+    
     html{overflow:hidden;}
     .nav-icon{font-size:1.6rem;top:2px;padding-right:8px;}
-    .add{font-size:10px;}
-    /* .bodystyle{padding:0 8px;} */
+    .hamburger{position:absolute;top:-23px;width:50px;height:25px;line-height:25px;z-index:999;background-color: rgba(24,66,111,0.5);border: 1px solid #18426f;box-shadow: 0px 6px 20px #000;}
+    .add,.delete{font-size: 16px;position: relative;top: 0;line-height: 25px;}
+    
     .righthide{display: none;}
     .current{display: block;}
     
-    .fanye{position: absolute;right: 0;bottom: 25px;width: 100px;height: 25px;z-index: 999;}
-    .fanye1{width: 60px;height: 60px;padding: 0px;position: absolute;bottom: -25px;right: 0;z-index:15;}
-    .fanyenav{width: 50px;float: right;height: 25px;line-height: 25px;background: rgba(0,0,0,0.5);position: relative;top: 10px;z-index:10}
-    .fanyenav span.glyphicon{font-size:16px;}
+    .fanye{position: absolute;right: 0;bottom: 13px;width: 100px;height: 27px;z-index: 999;}
+    .fanye1{width: 100%;height: 100%;position: relative;z-index: 15;}
+    .fanyenav{width: 50px;float: right;height: 25px;bottom: 25px;z-index: 10;line-height: 25px;background-color: rgba(24,66,111,0.5);border: 1px solid #18426f;box-shadow: 0px 6px 20px #000;border-top-left-radius: 12px;border-bottom-left-radius: 12px;}
+    .fanyenav span.glyphicon{font-size:16px;line-height: 10px;}
     
-    .fanyelr{float: left;position: relative;width: 100px;height: 25px;line-height: 25px;background: rgba(0,0,0,0.5);z-index:20;}
-    .fanyelr a{width: 35px;height: 32px;line-height: 32px;display: inline-block;float:left;}
+    .fanyelr{float: left;position: absolute;bottom:2px;width: 100px;height: 25px;line-height: 25px;background-color: rgba(24,66,111,0.5);border: 1px solid #18426f;box-shadow: 0px 6px 20px #000;z-index:20;border-top-left-radius: 12px;border-bottom-left-radius: 12px;}
+    .fanyelr a{width: 35px;height: 25px;line-height: 25px;display: inline-block;float:left;}
     .fanyelr a span{font-size:16px;}
     .pg_left:hover,.pg_right:hover{diplay:block;background:#556fad;width:35px;height:25px;}
-    /* .pg_left:active,.pg_right:active{diplay:block;background:#556fad;width:35px;height:25px;} */
-    .pg_left:focus,.pg_right:focus{diplay:block;background:#556fad;width:35px;height:25px;}
-    /* .pg_left,.pg_right{cursor:pointer;display:block;float:left;width:100px;height:25px;background:pink;} 
-    .pg_left div,.pg_right div{border: 1px solid #fff;padding: 0 15px;color:#fff;float:left;}
-     */
+    .pg_left:focus,.pg_right:focus{diplay:block;background:#556fad;width:35px;height:25px;;}
+    .pg_left:hover,.pg_left:focus{border-top-left-radius: 12px;border-bottom-left-radius: 12px;}
+    .pg_right:hover,.pg_right:focus{border-top-right-radius: 12px;border-bottom-right-radius: 12px;}
+    
+    
+    
     
     </style>
 </head>
@@ -42,40 +44,36 @@
 		<!-- 顶部 -->
 		<div class="header">
             <div class="headerleft">
-                <span style="font-size:1.8rem;float:left;line-height:50px;margin-left: 10px;">15:29:59</span>
+                <span style="font-size:18px;float:left;line-height:50px;margin-left: 10px;">15:29:59</span>
                 <div style="float: left;margin-left:10px;">
-                    <span style="font-size:0.5rem;">2017/10/16</span>
-                    <span style="font-size:0.5rem;">星期二</span>
+                    <span style="font-size:12px;">2017/10/16</span>
+                    <span style="font-size:12px;">星期二</span>
                 </div>
             </div>
             <div class="headercenter">
                 <div class="headercenterdiv">
 					<img src="img/logo.png" style="width: 11rem;vertical-align:middle;" >
-					<span style="font-size:1.5rem;">陕西省分行&nbsp;&nbsp;</span>
-					<span style="font-size:1.8rem;">|&nbsp;&nbsp;大数据可视化平台</span>
+					<span style="font-size:15px;">陕西省分行&nbsp;&nbsp;</span>
+					<span style="font-size:18px;">|&nbsp;&nbsp;大数据可视化平台</span>
                 </div>         
             </div>  
             <div class="headerright">
             	<div class="nav-icon glyphicon glyphicon-flag"></div>
-                <span style="font-size:0.5rem;">担当社会责任，做最好的银行</span>
+                <span style="font-size:12px;">担当社会责任，做最好的银行</span>
             </div>
         </div>
 		<div id='wrap1' class="containerall">
 			<ul class="containercon">
 				<li class="li1">
-					<!-- <div class="nav-label hamburger hamburger--collapse">
+					
+            		<div class="nav-label hamburger hamburger--collapse" style="position:absolute;width:50px;">
 		                <div class="hamburger-box">
-		                  <div class="hamburger-inner"></div>
-		                </div>
-            		</div> -->
-            		<div class="nav-label hamburger hamburger--collapse" style="width:11px;">
-		                <div class="hamburger-box">
-		                  <!-- <span class="add glyphicon glyphicon-plus-sign" aria-hidden="true"></span>
-		                  <span class="delete glyphicon glyphicon-minus-sign" aria-hidden="true" style="display:none"></span> -->
+		                 <!--  <span class="add glyphicon glyphicon-plus-sign" aria-hidden="true"></span>
+		                  <span class="delete glyphicon glyphicon-minus-sign" aria-hidden="true"></span> -->
 		                  <span class="add glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-		                  <span class="delete glyphicon glyphicon-remove" aria-hidden="true" style="display:none"></span>
-		                  <!-- <span class="icon-remove-3x"></i></span>
-		                  <span style="display:none" class="icon-reorder-3x"></i></span> -->
+		                  <span class="delete glyphicon glyphicon-remove" aria-hidden="true" style="display:none;"></span>
+		                  <span class="icon-remove-3x"></i></span>
+		                  <span style="display:none" class="icon-reorder-3x"></i></span>
 		                </div>
             		</div>
 					<div class="demopage">
@@ -117,7 +115,7 @@
 				</li>
 				<label class="lab1" id='lab1'></label>
 				<li class="li2">
-					<div class="righthide current" style="width: 100%;height:100%;">
+					<div class="righthide current" style="width: 100%;height:100%;height:99%;">
 						<div class="col1">
 							<%-- <div class="col1row1 borderstyle1">
 								<div class="titlestyle">人口分布</div>
@@ -168,7 +166,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="righthide" style="width: 100%;height:100%;">
+					<div class="righthide" style="width: 100%;height:100%;height:99%;">
 						<div class="col1">
 							
 							<div class="col1row1 borderstyle1">
@@ -216,12 +214,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="righthide current" style="width: 100%;height:100%;">
+					<div class="righthide current" style="width: 100%;height:100%;height:99%;">
 						<div class="col1">
-							<%-- <div class="col1row1 borderstyle1">
-								<div class="titlestyle">人口分布</div>
-								<div class="bodystyle"><%@include file="echart0.jsp"%></div>	
-							</div> --%>
 							<div class="col1row1 borderstyle1">
 								<div class="titlestyle">人口分布</div>
 								<div class="bodystyle"><iframe src="echart3.jsp"  frameborder="0" width="100%" height="100%" scrolling="no" ></iframe></div>	
@@ -271,7 +265,7 @@
 			</ul>
 		</div>
 		<div class="footer">
-            <span>版权所有&copy;中国银行陕西省分行</span>   
+            <span style="font-size:12px;">版权所有&copy;中国银行陕西省分行</span>   
             
         </div>   
         <div class="fanye">
@@ -282,10 +276,10 @@
         	</div>
         	<div class="fanyelr" style="display:none">
         		<a href="javascript:void(0)" class="pg_left ps_pre">
-        			<span class="glyphicon glyphicon-chevron-left" style="position:relative;top:6px"></span>
+        			<span class="glyphicon glyphicon-chevron-left" style="position:relative;top:4px"></span>
         		</a>
         		<a href="javascript:void(0)" class="pg_right ps_next">
-        			<span class="glyphicon glyphicon-chevron-right" style="position:relative;top:6px"></span>
+        			<span class="glyphicon glyphicon-chevron-right" style="position:relative;top:4px"></span>
         		</a>
         	</div>
     	</div>		 
@@ -306,10 +300,11 @@
             btnGo:{up:'#goU',down:'#goD'},
             direction:'down'
         });
-        var navheight = $(window).height()-200;
+        var navheight = $(window).height()-165;
         $('#marquee2').css('height',navheight);
        	var navlabelheight=$(window).height()-95;
         $('#wrap1 label.lab1').css('height',navlabelheight);
+        
         var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.call(t))for(var c in t)Object.prototype.hasOwnProperty.call(t,c)&&o.call(r,t[c],c,t);else for(var e=0,l=t.length;l>e;e++)o.call(r,t[e],e,t)};
 
 
@@ -330,11 +325,20 @@
 			$('.delete').toggle();
 		});
 
-		$(".fanye1").mouseover(function (){
-			$(".fanyenav").toggle();
-			$(".fanyelr").toggle();	
+		$(".fanyenav").mouseover(function (){
+			$(".fanyenav").hide();
+			$(".fanyelr").show();	
 		}); 
-		
+		$(".fanyelr").mouseover(function (){
+			$(".fanyelr").show();
+			$(".fanyenav").hide();
+				
+		}); 
+		$(".fanyelr").mouseout(function (){
+			$(".fanyelr").hide();
+			$(".fanyenav").show();
+				
+		}); 
 		
         $(".nav-label").click(function(){
             if((num%2)==0){
@@ -344,7 +348,7 @@
                 });
                 $(".hamburger").css({
                 	"position":"absolute",
-                	"width":"11px",
+                	"width":"50px",
                 });
                 $(".li2").css({
                     "width":"100%",
@@ -364,8 +368,8 @@
                     "width":"90%",
                 });
                 $(".hamburger").css({
-                	"position":"relative",
-                	"width":"100%",
+                	"position":"absolute",
+                	"width":"50px",
                 });
                 $(".lab1").css({
                 	"left":"10%",

@@ -92,10 +92,7 @@
 				<li class="li2">
 					<div style="width: 100%;height:100%;">
 						<div class="col1">
-							<%-- <div class="col1row1 borderstyle1">
-								<div class="titlestyle">人口分布</div>
-								<div class="bodystyle"><%@include file="echart0.jsp"%></div>	
-							</div> --%>
+							
 							<div class="col1row1 borderstyle1">
 								<div class="titlestyle">人口分布</div>
 								<div class="bodystyle"><iframe src="echart0.jsp"  frameborder="0" width="100%" height="100%" scrolling="no" ></iframe></div>	
