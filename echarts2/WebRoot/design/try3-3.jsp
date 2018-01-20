@@ -12,84 +12,38 @@
     <link rel="stylesheet" type="text/css" href="css/layout.css">
     <link rel="stylesheet" type="text/css" href="css/leftNav.css">
     <link rel="stylesheet" type="text/css" href="css/hamburgers.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="js/layerui/css/layui.css"  media="all">
-    <style>
-   /*  html, body {
-	    -ms-overflow-style: scrollbar;
-	}
-    html,body{overflow:hidden;} */
-    .nav-icon{font-size:1.6rem;top:2px;padding-right:8px;}
-    .hamburger{position:fixed;top:32px;width:50px;height:25px;line-height:25px;z-index:999;
-    	border: 1px solid #CC3333;box-shadow: 0px 6px 20px #000;background:#CC3333;left:0;}
-	    
-    .add,.delete{font-size: 16px;position: relative;top: 0;line-height: 25px;}
-    
-    .righthide{display: none;}
-    .current{display: block;}
-    
-    .fanye{position: fixed;right: 0;bottom: 13px;width: 100px;height: 27px;z-index: 999;}
-    .fanye1{width: 100%;height: 100%;position: relative;z-index: 15;}
-    .fanyenav{width: 50px;float: right;height: 25px;bottom: 25px;z-index: 10;line-height: 25px;box-shadow: 0px 6px 20px #000;border-top-left-radius: 12px;border-bottom-left-radius: 12px;
-    	background:#CC3333;border: 1px solid #CC3333;}
-    .fanyenav span.glyphicon{font-size:16px;line-height: 10px;}
-    .fanyelr{float: left;position: absolute;bottom:2px;width: 100px;height: 25px;line-height: 25px;box-shadow: 0px 6px 20px #000;z-index:20;border-top-left-radius: 12px;border-bottom-left-radius: 12px;
-    	background:#CC3333;}
-    .pg_left{width: 35px;height: 25px;line-height: 25px;display: inline-block;float:left;border-top-left-radius: 18px;
-    border-bottom-left-radius: 18px;border:1px solid #CC3333;}
-    .pg_right{width: 35px;height: 25px;line-height: 25px;display: inline-block;float:left;border-top-right-radius: 18px;
-    border-bottom-right-radius: 18px;border:1px solid #CC3333;}
-    .fanyelr a span{font-size:16px;}
-    .pg_left:hover,.pg_right:hover,.pg_left:focus,.pg_right:focus{diplay:block;width:35px;height:25px;line-height:25px;
-	    background: #FF6666;border:1px solid #FFCCCC;}
-    
-    .pg_left:hover,.pg_left:focus{border-top-left-radius: 12px;border-bottom-left-radius: 12px;}
-    .pg_right:hover,.pg_right:focus{border-top-right-radius: 12px;border-bottom-right-radius: 12px;}
-    
-    .layui-layer-title{background: linear-gradient(bottom , rgba(0, 0, 0, 0.91) , rgb(25, 67, 112) 10% , rgb(16, 43, 71) 100%);
-	    background: -o-linear-gradient(bottom , rgba(0, 0, 0, 0.91) , rgb(25, 67, 112) 10% , rgb(16, 43, 71) 100%);
-	    background: -ms-linear-gradient(bottom , rgba(0, 0, 0, 0.91) , rgb(25, 67, 112) 10% , rgb(16, 43, 71) 100%);
-	    background: -moz-linear-gradient(bottom , rgba(0, 0, 0, 0.91) , rgb(25, 67, 112) 10% , rgb(16, 43, 71) 100%);
-	    background: -webkit-linear-gradient(bottom , rgba(0, 0, 0, 0.91) , rgb(25, 67, 112) 10% , rgb(16, 43, 71) 100%);
-	    color:#fff!important; border: none!important;}
 
-    body .demo-class {box-shadow: 1px 1px 50px rgba(255,255,255,.3);}
-	.layui-layer-content {background:#0f2b48;}
-	/* body .demo-class .layui-layer-ico {background: url(img/closew.png) no-repeat;background-size:16px;} */
-	.layui-layer-shade{opacity: 0.9;}
-    .layui-layer-setwin .layui-layer-min cite{background-color:#fff!important;}
-    .layui-layer{background-color:#0f2b48!important;}
-   
-    </style>
 </head>
 <body style="overflow: hidden">
 	<div class="wrap" style="overflow:hidden">
 		<!-- 顶部 -->
 		<div class="header">
             <div class="headerleft">
-                <span style="font-size:18px;float:left;line-height:50px;margin-left: 10px;">15:29:59</span>
+                <span class="f18 fl lh50 ml10">15:29:59</span>
                 <div style="float: left;margin-left:10px;">
-                    <span style="font-size:12px;">2017/10/16</span>
-                    <span style="font-size:12px;">星期二</span>
+                    <span class="f12">2017/10/16</span>
+                    <span class="f12">星期二</span>
                 </div>
             </div>
             <div class="headercenter">
                 <div class="headercenterdiv">
-					<!-- <img src="img/logo.png" style="width: 11rem;vertical-align:middle;" > -->
-					<img src="img/zgyh.png" style="width: 10rem;vertical-align:middle;position:relative;bottom:6px;" >
-					<span style="font-size:15px;">陕西省分行&nbsp;&nbsp;</span>
-					<span style="font-size:18px;">|&nbsp;&nbsp;大数据可视化平台</span>
+					<img src="img/zgyh.png" class="repos logoimg" >
+					<span class="f15">陕西省分行&nbsp;&nbsp;</span>
+					<span class="f18">|&nbsp;&nbsp;大数据可视化平台</span>
                 </div>         
             </div>  
             <div class="headerright">
             	<div class="nav-icon glyphicon glyphicon-flag"></div>
-                <span style="font-size:12px;">担当社会责任，做最好的银行</span>
+                <span class="f12">担当社会责任，做最好的银行</span>
             </div>
         </div>
 		<div id='wrap1' class="containerall">
 			<ul class="containercon">
 				<li class="li1">
 					
-            		<div class="nav-label hamburger hamburger--collapse" style="position:fixed;width:50px;">
+            		<div class="nav-label hamburger hamburger--collapse fixpos hamicon">
 		                <div class="hamburger-box">
 		                  <span class="add glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
 		                  <span class="delete glyphicon glyphicon-menu-hamburger" aria-hidden="true" style="display:none;"></span>
@@ -100,7 +54,7 @@
 					<div class="demopage">
                         <div class="control">
                             <a href="javascript:void(0);" id="top">
-                            	<div style="height:35px;width:100%;backgroud:red;">
+                            	<div class="navtopbottom">
                             		<span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
                             	</div>     
                             </a>
@@ -108,27 +62,27 @@
                         <div id="myscroll">
                             <div id="myscrollbox">
                                 <ul>
-                                    <li><a href="layout.jsp" target="li2_iframe"><div style="height:50px;"><div class="nav-icon glyphicon glyphicon-user"></div>客户服务</div></a></li>
-                                    <li><a href="echart1.jsp" target="li2_iframe"><div style="height:50px;"><div class="nav-icon glyphicon glyphicon-shopping-cart"></div>实时营销</div></a></li>
-                                    <li><a href="layout.jsp" target="li2_iframe"><div style="height:50px;"><div class="nav-icon glyphicon glyphicon-duplicate"></div>计量资产</div></a></li>
-                                    <li><a href="echart3.jsp"><div style="height:50px;"><div class="nav-icon glyphicon glyphicon-tasks"></div>市场发展</div></a></li>
-                                    <li><a href="layout.jsp"><div style="height:50px;"><div class="nav-icon glyphicon glyphicon-stats"></div>营业成果</div></a></li>
-                                    <li><a href="echart0.jsp"><div style="height:50px;"><div class="nav-icon glyphicon glyphicon-user"></div>客户服务</div></a></li>
-                                    <li><a href="try3.jsp"><div style="height:50px;"><div class="nav-icon glyphicon glyphicon-shopping-cart"></div>实时营销</div></a></li>
-                                    <li><a href="111.jsp"><div style="height:50px;"><div class="nav-icon glyphicon glyphicon-duplicate"></div>计量资产</div></a></li>
-                                    <li><a href="111.jsp"><div style="height:50px;"><div class="nav-icon glyphicon glyphicon-tasks"></div>市场发展</div></a></li>
-                                    <li><a href="111.jsp"><div style="height:50px;"><div class="nav-icon glyphicon glyphicon-stats"></div>营业成果</div></a></li>
-                                    <li><a href="111.jsp"><div style="height:50px;"><div class="nav-icon glyphicon glyphicon-user"></div>客户服务</div></a></li>
-                                    <li><a href="111.jsp"><div style="height:50px;"><div class="nav-icon glyphicon glyphicon-shopping-cart"></div>实时营销</div></a></li>
-                                    <li><a href="111.jsp"><div style="height:50px;"><div class="nav-icon glyphicon glyphicon-duplicate"></div>计量资产</div></a></li>
-                                    <li><a href="111.jsp"><div style="height:50px;"><div class="nav-icon glyphicon glyphicon-tasks"></div>市场发展</div></a></li>
-                                    <li><a href="111.jsp"><div style="height:50px;"><div class="nav-icon glyphicon glyphicon-stats"></div>营业成果</div></a></li>
+                                    <li><a href="layout.jsp" target="li2_iframe"><div class="scrnav"><div class="nav-icon glyphicon glyphicon-user"></div>客户服务</div></a></li>
+                                    <li><a href="echart1.jsp" target="li2_iframe"><div class="scrnav"><div class="nav-icon glyphicon glyphicon-shopping-cart"></div>实时营销</div></a></li>
+                                    <li><a href="layout.jsp" target="li2_iframe"><div class="scrnav"><div class="nav-icon glyphicon glyphicon-duplicate"></div>计量资产</div></a></li>
+                                    <li><a href="echart3.jsp"><div class="scrnav"><div class="nav-icon glyphicon glyphicon-tasks"></div>市场发展</div></a></li>
+                                    <li><a href="layout.jsp"><div class="scrnav"><div class="nav-icon glyphicon glyphicon-stats"></div>营业成果</div></a></li>
+                                    <li><a href="echart0.jsp"><div class="scrnav"><div class="nav-icon glyphicon glyphicon-user"></div>客户服务</div></a></li>
+                                    <li><a href="try3.jsp"><div class="scrnav"><div class="nav-icon glyphicon glyphicon-shopping-cart"></div>实时营销</div></a></li>
+                                    <li><a href="111.jsp"><div class="scrnav"><div class="nav-icon glyphicon glyphicon-duplicate"></div>计量资产</div></a></li>
+                                    <li><a href="111.jsp"><div class="scrnav"><div class="nav-icon glyphicon glyphicon-tasks"></div>市场发展</div></a></li>
+                                    <li><a href="111.jsp"><div class="scrnav"><div class="nav-icon glyphicon glyphicon-stats"></div>营业成果</div></a></li>
+                                    <li><a href="111.jsp"><div class="scrnav"><div class="nav-icon glyphicon glyphicon-user"></div>客户服务</div></a></li>
+                                    <li><a href="111.jsp"><div class="scrnav"><div class="nav-icon glyphicon glyphicon-shopping-cart"></div>实时营销</div></a></li>
+                                    <li><a href="111.jsp"><div class="scrnav"><div class="nav-icon glyphicon glyphicon-duplicate"></div>计量资产</div></a></li>
+                                    <li><a href="111.jsp"><div class="scrnav"><div class="nav-icon glyphicon glyphicon-tasks"></div>市场发展</div></a></li>
+                                    <li><a href="111.jsp"><div class="scrnav"><div class="nav-icon glyphicon glyphicon-stats"></div>营业成果</div></a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="control">
                         	<a href="javascript:void(0);" id="down">
-                            	<div style="height:35px;width:100%;backgroud:red;">
+                            	<div class="navtopbottom">
                             		<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
                             	</div>     
                             </a>
@@ -136,7 +90,6 @@
                         </div>
                     </div>
 				</li>
-				<!-- <label class="lab1" id='lab1'></label> -->
 				<li class="li2">
 					<iframe name="li2_iframe" id="li2_iframe" src="layout.jsp"  frameborder="0" width="100%" height="100%" scrolling="no" ></iframe>
 				</li>
@@ -154,10 +107,10 @@
         	</div> 
         	<div class="fanyelr" style="display:none">
         		<a href="javascript:void(0)" class="pg_left ps_pre">
-        			<span class="glyphicon glyphicon-chevron-left" style="position:relative;top:5px"></span>
+        			<span class="glyphicon glyphicon-chevron-left glytop"></span>
         		</a>
         		<a href="javascript:void(0)" class="pg_right ps_next">
-        			<span class="glyphicon glyphicon-chevron-right" style="position:relative;top:5px"></span>
+        			<span class="glyphicon glyphicon-chevron-right glytop"></span>
         		</a>
         	</div>
     	</div>	

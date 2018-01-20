@@ -15,3 +15,14 @@ body {color: #fff;font-size: 1rem;text-align: center;background:#0f2b48;margin:0
 		background: -ms-linear-gradient(bottom , rgba(0, 0, 0, 0.61) , rgb(25, 67, 112) 10% , rgb(16, 43, 71) 100%);
 		background: -moz-linear-gradient(bottom , rgba(0, 0, 0, 0.61) , rgb(25, 67, 112) 10% , rgb(16, 43, 71) 100%);
 		background: -webkit-linear-gradient(bottom , rgba(0, 0, 0, 0.61) , rgb(25, 67, 112) 10% , rgb(16, 43, 71) 100%);}
+		
+		
+.f12{font-size:12px;}
+.f15{font-size:15px;}
+.f18{font-size:18px;}
+.fl{float:left;}
+.lh50{line-height:50px;}
+.ml10{margin-left:10px}
+.repos{position:relative}
+.abpos{position:absolute}
+.fixpos{position:fixed}

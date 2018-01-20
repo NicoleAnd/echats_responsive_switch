@@ -9,24 +9,19 @@
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/layout1.css">
-    <style>
-    	.enlargeicon{float: right;display: block;width: 30px;height: 25px;padding: 4px;background: url(img/enlarge.png) center no-repeat;background-size: 17px;}
-    	.titlestyle a.enlargeicon:hover{background:url(img/enlarge2.png) center no-repeat;background-size: 17px;}
-		.stitle{position:absolute;top: 0;left:43%;width: 200px;height: 40px;text-align: center;line-height: 40px;
-    background: #18426f;color:#fff;box-shadow: 0px 3px 10px #000;z-index:99999;
-    border-bottom-left-radius:10px;border-bottom-right-radius:10px;border: 1px solid #18426f;border-top:none;}
-	</style>
+    <link rel="stylesheet" type="text/css" href="css/layoutstyle.css">
+    
 </head>
 
 <body style="padding:0.5px;>
 	<div class="wrap">
 	<div class="stitle"><span>二级标题1</span></div>
 		<div id='wrap1' class="containerall">	
-			<div class="righthide current" style="width: 100%;height:100%;height:99%;">
+			<div class="righthide current">
 				<div class="col1">
 					<div class="col1row1 cone borderstyle1">
 						<div class="titlestyle tone">
-							<span id="titlesecond" style="float:left;">人口分布1</span>
+							<span id="titlesecond" class="fl">人口分布1</span>
 							<a href="#" data-method="setTop" class="enlargeicon layui-btn" title="可放大查看" onclick = "window.parent.showOpen(this,'echart0.jsp')"></a>
 						</div>
 						<div class="bodystyle bone"><iframe src="echart0.jsp"  frameborder="0" width="100%" height="100%" scrolling="no" ></iframe></div>	
@@ -34,14 +29,14 @@
 					
 					<div class="col1row2 borderstyle1 ctwo">
 						<div class="titlestyle ttwo">
-							<span style="float:left;">人口分布123</span>
+							<span class="fl">人口分布123</span>
 							<a href="#" data-method="setTop" class="enlargeicon layui-btn" title="可放大查看" onclick = "window.parent.showOpen(this,'echart1.jsp')"></a>
 						</div>
 						<div class="bodystyle btwo" style="overflow:scroll;"><iframe src="echart1.jsp"  frameborder="0" width="100%" height="100%" scrolling="no" ></iframe></div>	
 					</div>
 					<div class="col1row3 borderstyle1 cthree">
 						<div class="titlestyle tthree">
-							<span style="float:left;">人口分布</span>
+							<span class="fl">人口分布</span>
 							<a href="#" data-method="setTop" class="enlargeicon layui-btn" title="可放大查看" onclick = "window.parent.showOpen(this,'echart2.jsp')"></a>
 						</div>
 						<div class="bodystyle bthree"><iframe src="echart2.jsp"  frameborder="0" width="100%" height="100%" scrolling="no" ></iframe></div>
@@ -50,7 +45,7 @@
 				<div class="col2">
 					<div class="col2row1 borderstyle1 cfour">
 						<div class="titlestyle tfour">
-							<span style="float:left;">人口分布</span>
+							<span class="fl">人口分布</span>
 							<a href="#" class="enlargeicon" title="可放大查看" onclick = "window.parent.clicked('人口分布','echart111.jsp')"></a>
 						</div>
 						<div class="bodystyle bfour"><iframe src="echart111.jsp"  frameborder="0" width="100%" height="100%" scrolling="no" ></iframe></div>
@@ -58,14 +53,14 @@
 					<div class="col2row2">
 						<div class="col2row2col1 borderstyle1 cfive">
 							<div class="titlestyle tfive">
-								<span style="float:left;">人口分布</span>
+								<span class="fl">人口分布</span>
 								<a href="#" class="enlargeicon" title="可放大查看" onclick = "window.parent.clicked('人口分布','echart4.jsp')"></a>
 							</div>
 							<div class="bodystyle bfive"><iframe src="echart4.jsp"  frameborder="0" width="100%" height="100%" scrolling="no" ></iframe></div>
 						</div>
 						<div class="col2row2col2 borderstyle1 csix">
 							<div class="titlestyle tsix">
-								<span style="float:left;">人口分布</span>
+								<span class="fl">人口分布</span>
 								<a href="#" class="enlargeicon" title="可放大查看" onclick = "window.parent.clicked('人口分布','echart5.jsp')"></a>
 							</div>
 							<div class="bodystyle bsix"><iframe src="echart5.jsp"  frameborder="0" width="100%" height="100%" scrolling="no" ></iframe></div>
@@ -75,21 +70,21 @@
 				<div class="col3">
 					<div class="col3row1 borderstyle1 cseven">
 						<div class="titlestyle tseven">
-							<span style="float:left;">人口分布</span>
+							<span class="fl">人口分布</span>
 							<a href="#" class="enlargeicon" title="可放大查看" onclick = "window.parent.clicked('人口分布','echart6.jsp')"></a>
 						</div>
 						<div class="bodystyle bseven"><iframe src="echart6.jsp"  frameborder="0" width="100%" height="100%" scrolling="no" ></iframe></div>
 					</div>
 					<div class="col3row2 borderstyle1 ceeight">
 						<div class="titlestyle teeight">
-							<span style="float:left;">人口分布</span>
+							<span class="fl">人口分布</span>
 							<a href="#" class="enlargeicon" title="可放大查看" onclick = "window.parent.clicked('人口分布','echart7.jsp')"></a>
 						</div>
 						<div class="bodystyle beeight"><iframe src="echart7.jsp"  frameborder="0" width="100%" height="100%" scrolling="no" ></iframe></div>
 					</div>
 					<div class="col3row3 borderstyle1 cnine">
 						<div class="titlestyle tnine">
-							<span style="float:left;">人口分布</span>
+							<span class="fl">人口分布</span>
 							<a href="#" class="enlargeicon" title="可放大查看" onclick = "window.parent.clicked('人口分布','echart8.jsp')"></a>
 						</div>
 						<div class="bodystyle bnine"><iframe src="echart8.jsp"  frameborder="0" width="100%" height="100%" scrolling="no" ></iframe></div>
@@ -100,7 +95,7 @@
 				<div class="col1">
 					<div class="col1row1 borderstyle1">
 						<div class="titlestyle">
-							<span style="float:left;">人口分布2</span>
+							<span class="fl">人口分布2</span>
 							<a href="#" class="enlargeicon" title="可放大查看" onclick = "window.parent.clicked('人口分布','echart0.jsp')"></a>
 						</div>
 						<div class="bodystyle"><iframe src="echart0.jsp"  frameborder="0" width="100%" height="100%" scrolling="no" ></iframe></div>	
@@ -108,14 +103,14 @@
 					
 					<div class="col1row2 borderstyle1">
 						<div class="titlestyle">
-							<span style="float:left;">人口分布</span>
+							<span class="fl">人口分布</span>
 							<a href="#" class="enlargeicon" title="可放大查看" onclick = "window.parent.clicked('人口分布','echart1.jsp')"></a>
 						</div>
 						<div class="bodystyle"><iframe src="echart1.jsp"  frameborder="0" width="100%" height="100%" scrolling="no" ></iframe></div>
 					</div>
 					<div class="col1row3 borderstyle1">
 						<div class="titlestyle">
-							<span style="float:left;">人口分布</span>
+							<span class="fl">人口分布</span>
 							<a href="#" class="enlargeicon" title="可放大查看" onclick = "window.parent.clicked('人口分布','echart2.jsp')"></a>
 						</div>
 						<div class="bodystyle"><iframe src="echart2.jsp"  frameborder="0" width="100%" height="100%" scrolling="no" ></iframe></div>
@@ -124,7 +119,7 @@
 				<div class="col2">
 					<div class="col2row1 borderstyle1">
 						<div class="titlestyle">
-							<span style="float:left;">人口分布</span>
+							<span class="fl">人口分布</span>
 							<a href="#" class="enlargeicon" title="可放大查看" onclick = "window.parent.clicked('人口分布','echart111.jsp')"></a>
 						</div>
 						<div class="bodystyle"><iframe src="echart111.jsp"  frameborder="0" width="100%" height="100%" scrolling="no" ></iframe></div>
@@ -132,14 +127,14 @@
 					<div class="col2row2">
 						<div class="col2row2col1 borderstyle1">
 							<div class="titlestyle">
-								<span style="float:left;">人口分布</span>
+								<span class="fl">人口分布</span>
 								<a href="#" class="enlargeicon" title="可放大查看" onclick = "window.parent.clicked('人口分布','echart4.jsp')"></a>
 							</div>
 							<div class="bodystyle"><iframe src="echart4.jsp"  frameborder="0" width="100%" height="100%" scrolling="no" ></iframe></div>
 						</div>
 						<div class="col2row2col2 borderstyle1">
 							<div class="titlestyle">
-								<span style="float:left;">人口分布</span>
+								<span class="fl">人口分布</span>
 								<a href="#" class="enlargeicon" title="可放大查看" onclick = "window.parent.clicked('人口分布','echart5.jsp')"></a>
 							</div>
 							<div class="bodystyle"><iframe src="echart5.jsp"  frameborder="0" width="100%" height="100%" scrolling="no" ></iframe></div>
@@ -149,21 +144,21 @@
 				<div class="col3">
 					<div class="col3row1 borderstyle1">
 						<div class="titlestyle">
-							<span style="float:left;">人口分布</span>
+							<span class="fl">人口分布</span>
 							<a href="#" class="enlargeicon" title="可放大查看" onclick = "window.parent.clicked('人口分布','echart6.jsp')"></a>
 						</div>
 						<div class="bodystyle"><iframe src="echart6.jsp"  frameborder="0" width="100%" height="100%" scrolling="no" ></iframe></div>
 					</div>
 					<div class="col3row2 borderstyle1">
 						<div class="titlestyle">
-							<span style="float:left;">人口分布</span>
+							<span class="fl">人口分布</span>
 							<a href="#" class="enlargeicon" title="可放大查看" onclick = "window.parent.clicked('人口分布','echart7.jsp')"></a>
 						</div>
 						<div class="bodystyle"><iframe src="echart7.jsp"  frameborder="0" width="100%" height="100%" scrolling="no" ></iframe></div>
 					</div>
 					<div class="col3row3 borderstyle1">
 						<div class="titlestyle">
-							<span style="float:left;">人口分布</span>
+							<span class="fl">人口分布</span>
 							<a href="#" class="enlargeicon" title="可放大查看" onclick = "window.parent.clicked('人口分布','echart8.jsp')"></a>
 						</div>
 						<div class="bodystyle"><iframe src="echart8.jsp"  frameborder="0" width="100%" height="100%" scrolling="no" ></iframe></div>
@@ -174,7 +169,7 @@
 				<div class="col1">
 					<div class="col1row1 borderstyle1">
 						<div class="titlestyle">
-							<span style="float:left;">人口分布3</span>
+							<span class="fl">人口分布3</span>
 							<a href="#" class="enlargeicon" title="可放大查看" onclick = "window.parent.clicked('人口分布','echart0.jsp')"></a>
 						</div>
 						<div class="bodystyle"><iframe src="echart0.jsp"  frameborder="0" width="100%" height="100%" scrolling="no" ></iframe></div>	
@@ -182,14 +177,14 @@
 					
 					<div class="col1row2 borderstyle1">
 						<div class="titlestyle">
-							<span style="float:left;">人口分布</span>
+							<span class="fl">人口分布</span>
 							<a href="#" class="enlargeicon" title="可放大查看" onclick = "window.parent.clicked('人口分布','echart1.jsp')"></a>
 						</div>
 						<div class="bodystyle"><iframe src="echart1.jsp"  frameborder="0" width="100%" height="100%" scrolling="no" ></iframe></div>
 					</div>
 					<div class="col1row3 borderstyle1">
 						<div class="titlestyle">
-							<span style="float:left;">人口分布</span>
+							<span class="fl">人口分布</span>
 							<a href="#" class="enlargeicon" title="可放大查看" onclick = "window.parent.clicked('人口分布','echart2.jsp')"></a>
 						</div>
 						<div class="bodystyle"><iframe src="echart2.jsp"  frameborder="0" width="100%" height="100%" scrolling="no" ></iframe></div>
@@ -198,7 +193,7 @@
 				<div class="col2">
 					<div class="col2row1 borderstyle1">
 						<div class="titlestyle">
-							<span style="float:left;">人口分布</span>
+							<span class="fl">人口分布</span>
 							<a href="#" class="enlargeicon" title="可放大查看" onclick = "window.parent.clicked('人口分布','echart111.jsp')"></a>
 						</div>
 						<div class="bodystyle"><iframe src="echart111.jsp"  frameborder="0" width="100%" height="100%" scrolling="no" ></iframe></div>
@@ -206,14 +201,14 @@
 					<div class="col2row2">
 						<div class="col2row2col1 borderstyle1">
 							<div class="titlestyle">
-								<span style="float:left;">人口分布</span>
+								<span class="fl">人口分布</span>
 								<a href="#" class="enlargeicon" title="可放大查看" onclick = "window.parent.clicked('人口分布','echart4.jsp')"></a>
 							</div>
 							<div class="bodystyle"><iframe src="echart4.jsp"  frameborder="0" width="100%" height="100%" scrolling="no" ></iframe></div>
 						</div>
 						<div class="col2row2col2 borderstyle1">
 							<div class="titlestyle">
-								<span style="float:left;">人口分布</span>
+								<span class="fl">人口分布</span>
 								<a href="#" class="enlargeicon" title="可放大查看" onclick = "window.parent.clicked('人口分布','echart5.jsp')"></a>
 							</div>
 							<div class="bodystyle"><iframe src="echart5.jsp"  frameborder="0" width="100%" height="100%" scrolling="no" ></iframe></div>
@@ -223,21 +218,21 @@
 				<div class="col3">
 					<div class="col3row1 borderstyle1">
 						<div class="titlestyle">
-							<span style="float:left;">人口分布</span>
+							<span class="fl">人口分布</span>
 							<a href="#" class="enlargeicon" title="可放大查看" onclick = "window.parent.clicked('人口分布','echart6.jsp')"></a>
 						</div>
 						<div class="bodystyle"><iframe src="echart6.jsp"  frameborder="0" width="100%" height="100%" scrolling="no" ></iframe></div>
 					</div>
 					<div class="col3row2 borderstyle1">
 						<div class="titlestyle">
-							<span style="float:left;">人口分布</span>
+							<span class="fl">人口分布</span>
 							<a href="#" class="enlargeicon" title="可放大查看" onclick = "window.parent.clicked('人口分布','echart7.jsp')"></a>
 						</div>
 						<div class="bodystyle"><iframe src="echart7.jsp"  frameborder="0" width="100%" height="100%" scrolling="no" ></iframe></div>
 					</div>
 					<div class="col3row3 borderstyle1">
 						<div class="titlestyle">
-							<span style="float:left;">人口分布</span>
+							<span class="fl">人口分布</span>
 							<a href="#" class="enlargeicon" title="可放大查看" onclick = "window.parent.clicked('人口分布','echart8.jsp')"></a>
 						</div>
 						<div class="bodystyle"><iframe src="echart8.jsp"  frameborder="0" width="100%" height="100%" scrolling="no" ></iframe></div>
@@ -293,7 +288,7 @@
     			}
     		}
     		$('.righthide').eq(index).show().siblings().hide();
-    		$('.stitle span').html('二级标题'+myarray[i]);
+    		$('.stitle span').html('二级标题'+myarray[index]);
     		
 	    }
     </script>
