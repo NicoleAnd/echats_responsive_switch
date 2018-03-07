@@ -1,0 +1,5 @@
+.enlargeicon{float: right;display: block;width: 30px;height: 25px;padding: 4px;background: url(../img/enlarge.png) center no-repeat;background-size: 17px;}
+.titlestyle a.enlargeicon:hover{background:url(../img/enlarge2.png) center no-repeat;background-size: 17px;}
+.stitle{position:absolute;top: 0;left:35%;width: 405px;height: 40px;text-align: center;line-height: 40px;
+    color:#fff;z-index:99999;}
+.righthide{width:100%;height:100%;}

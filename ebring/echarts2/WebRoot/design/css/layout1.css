@@ -1,0 +1,20 @@
+.wrap{width: 100%;height: 100%;color: #fff;}
+
+/*鍙冲唴瀹�*/
+
+.containerall{width: 100%;overflow:hidden;}
+.contents{width:100%;height:100%;padding: 1%;}
+.col1{width:25%;height:100%;float: left;margin:0.5% 0 1% 0.5%;}
+.col2{width:48%;height:100%;float: left;margin:0.5% 0 1% 0.5%;}
+.col3{width:25%;height:100%;float: left;margin:0.5% 0 1% 0.5%;}
+.col1row1{width:100%;height:32%;float: left;margin: 0 1% 1% 0;}
+.col1row2{width:100%;height:32%;float: left;margin: 1% 0;}
+.col1row3{width:100%;height:32%;float: left;margin: 1% 0 0 0;}
+.col2row1{width:100%;height:60.1%;float: left;margin: 5% 1% 1% 0;}
+.col2row2{width:100%;height:32%;float: right;margin-bottom: 0;}
+.col2row2col1{width:49.5%;height:100%;float: left;}
+.col2row2col2{width:49.5%;height:100%;float: right;}
+.col3row1{width:100%;height:32%;float: left;margin: 0 1% 1% 0;}
+.col3row2{width:100%;height:32%;float: left;margin: 1% 0;}
+.col3row3{width:100%;height:32%;float: left;margin: 1% 0 0 0;}
+ 

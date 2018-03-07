@@ -1,5 +1,5 @@
-.enlargeicon{float: right;display: block;width: 30px;height: 25px;padding: 4px;background: url(img/enlarge.png) center no-repeat;background-size: 17px;}
-.titlestyle a.enlargeicon:hover{background:url(img/enlarge2.png) center no-repeat;background-size: 17px;}
+.enlargeicon{float: right;display: block;width: 30px;height: 25px;padding: 4px;background: url(../img/enlarge.png) center no-repeat;background-size: 17px;}
+.titlestyle a.enlargeicon:hover{background:url(../img/enlarge2.png) center no-repeat;background-size: 17px;}
 .stitle{position:absolute;top: 0;left:43%;width: 200px;height: 40px;text-align: center;line-height: 40px;
     background: #18426f;color:#fff;box-shadow: 0px 3px 10px #000;z-index:99999;
     border-bottom-left-radius:10px;border-bottom-right-radius:10px;border: 1px solid #18426f;border-top:none;}
